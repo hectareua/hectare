@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+
+system('./yii migrate/to m160622_092237_create_image_info --interactive=0 && ./yii migrate/down 1 --interactive=0 && ./yii migrate --interactive=0 && ./yii seed && ./yii import');

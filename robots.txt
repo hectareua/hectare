@@ -1,0 +1,40 @@
+User-agent: Yandex
+Disallow: *%2C*
+Disallow: *manufacturer*
+Disallow: /?gclid=
+Disallow: /?utm_source=
+Disallow: /?yclid=
+Disallow: /*_openstat*
+Disallow: /*web
+Disallow: /*?start
+
+Host: https://hectare.com.ua
+
+User-agent: Googlebot
+Disallow: *%2C*
+Disallow: *manufacturer*
+Disallow: /?gclid=
+Disallow: /?utm_source=
+Disallow: /?yclid=
+Disallow: /*_openstat*
+Disallow: /*web
+Disallow: /*?start
+
+User-agent: *
+Disallow: *%2C*
+Disallow: *manufacturer*
+Disallow: /?gclid=
+Disallow: /?utm_source=
+Disallow: /?yclid=
+Disallow: /*_openstat*
+Disallow: /*web
+Disallow: /*?start
+
+User-agent: Googlebot-Image
+Allow: *images*
+Sitemap: https://hectare.com.ua/images_sitemap.xml
+
+User-agent: YandexImages
+Allow: *images*
+
+Sitemap: https://hectare.com.ua/sitemap.xml
