@@ -1,0 +1,1752 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<main month="01.01.19">
+	<СurrencyRate date="25.01.2019 11:09:24">
+		<record>
+			<Сurrency id="978">EUR</Сurrency>
+			<Curs>32,83</Curs>
+			<Cratnost>1</Cratnost>
+		</record>
+		<record>
+			<Сurrency id="980">UAH</Сurrency>
+			<Curs>1</Curs>
+			<Cratnost>1</Cratnost>
+		</record>
+		<record>
+			<Сurrency id="840">USD</Сurrency>
+			<Curs>28,5</Curs>
+			<Cratnost>1</Cratnost>
+		</record>
+	</СurrencyRate>
+	<SalesManufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Юг АгроЛидер</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00006312">Семена подсолнечника НС Таурус (стандарт) 2018</Tovar>
+					<Order_Date>30.10.2018 11:59:41</Order_Date>
+					<Summa>9876</Summa>
+					<kvo>6</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00006113">Насіння соняшника Рімі стандарт (2017 года Югагролідер)</Tovar>
+					<Order_Date>06.09.2018 12:54:34</Order_Date>
+					<Summa>-8977,5</Summa>
+					<kvo>-7</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00006313">Насіння соняшника "Імісан" екстра 2018</Tovar>
+					<Order_Date>14.01.2019 10:07:54</Order_Date>
+					<Summa>4580</Summa>
+					<kvo>2</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00001396">Насіння соняшника "Імісан" стандарт 2018</Tovar>
+					<Order_Date>14.01.2019 10:07:54</Order_Date>
+					<Summa>1800</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00006170">Насіння гібриду соняшника "Рими" (экстра) 2018 (міш) Юг</Tovar>
+					<Order_Date>14.01.2019 13:26:20</Order_Date>
+					<Summa>17606,05</Summa>
+					<kvo>7</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00006113">Насіння соняшника Рімі стандарт (2017 года Югагролідер)</Tovar>
+					<Order_Date>22.01.2019 12:06:20</Order_Date>
+					<Summa>4770</Summa>
+					<kvo>3</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001542">Семена подсолнечника НС Таурус (экстра) 2018</Tovar>
+					<Order_Date>12.12.2018 13:24:45</Order_Date>
+					<Summa>2265,75</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001396">Насіння соняшника "Імісан" стандарт 2018</Tovar>
+					<Order_Date>28.12.2018 8:59:03</Order_Date>
+					<Summa>21600,15</Summa>
+					<kvo>13</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006113">Насіння соняшника Рімі стандарт (2017 года Югагролідер)</Tovar>
+					<Order_Date>24.01.2019 11:13:17</Order_Date>
+					<Summa>5130</Summa>
+					<kvo>4</kvo>
+				</record>
+				<record>
+					<Manager id="000000157">Чепурних Володимир Михайлович</Manager>
+					<Tovar id="ФР-00004018">Насіння соняшника НС Адмірал (НС Х 195) стандарт 2018</Tovar>
+					<Order_Date>17.01.2019 13:16:46</Order_Date>
+					<Summa>1775</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000011">Дели Алексей </Manager>
+					<Tovar id="ФР-00001542">Семена подсолнечника НС Таурус (экстра) 2018</Tovar>
+					<Order_Date>27.11.2018 10:21:24</Order_Date>
+					<Summa>53300</Summa>
+					<kvo>26</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">null</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000010">Савчук Ирина </Manager>
+					<Tovar id="ФР-00000306">Транспортные услуги</Tovar>
+					<Order_Date>06.11.2018 12:36:17</Order_Date>
+					<Summa>5500</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00006650">Аренда ОХ</Tovar>
+					<Order_Date>21.01.2019 10:59:07</Order_Date>
+					<Summa>240</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000013">Калаянова Ольга</Manager>
+					<Tovar id="ФР-00000306">Транспортные услуги</Tovar>
+					<Order_Date>15.01.2019 16:24:59</Order_Date>
+					<Summa>107</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000010">Савчук Ирина </Manager>
+					<Tovar id="ФР-00000321">Налог</Tovar>
+					<Order_Date>18.10.2018 16:03:26</Order_Date>
+					<Summa>206,9</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000040">Резниченко Наталья</Manager>
+					<Tovar id="ФР-00000321">Налог</Tovar>
+					<Order_Date>15.01.2019 12:51:50</Order_Date>
+					<Summa>129,4</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000040">Резниченко Наталья</Manager>
+					<Tovar id="ФР-00000321">Налог</Tovar>
+					<Order_Date>15.01.2019 13:14:39</Order_Date>
+					<Summa>62,16</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000010">Савчук Ирина </Manager>
+					<Tovar id="ФР-00000306">Транспортные услуги</Tovar>
+					<Order_Date>15.01.2019 11:08:59</Order_Date>
+					<Summa>80</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Альфа Хим Групп</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001953">ДОК Про, ЗП 1кг</Tovar>
+					<Order_Date>15.11.2018 13:43:38</Order_Date>
+					<Summa>5850</Summa>
+					<kvo>9</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000310">Джин 1 кг</Tovar>
+					<Order_Date>23.01.2019 12:55:05</Order_Date>
+					<Summa>3000</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00000435">Венцедор, ТН 5л</Tovar>
+					<Order_Date>22.01.2019 11:25:30</Order_Date>
+					<Summa>1280</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000011">Дели Алексей </Manager>
+					<Tovar id="ФР-00000310">Джин 1 кг</Tovar>
+					<Order_Date>10.01.2019 12:23:09</Order_Date>
+					<Summa>16200</Summa>
+					<kvo>60</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Ранголи</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000052">Граник 0,5кг</Tovar>
+					<Order_Date>11.12.2018 10:46:09</Order_Date>
+					<Summa>650</Summa>
+					<kvo>0,5</kvo>
+				</record>
+				<record>
+					<Manager id="000000045">ФОП Левченко</Manager>
+					<Tovar id="ФР-00000062">Прайм (5л)</Tovar>
+					<Order_Date>15.01.2019 10:47:38</Order_Date>
+					<Summa>2955,5</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000062">Прайм (5л)</Tovar>
+					<Order_Date>06.12.2018 16:01:30</Order_Date>
+					<Summa>-1204,13</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000011">Дели Алексей </Manager>
+					<Tovar id="ФР-00000052">Граник 0,5кг</Tovar>
+					<Order_Date>29.12.2018 11:57:38</Order_Date>
+					<Summa>5552</Summa>
+					<kvo>5</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Вассма</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000080">Шериф (0,5кг)</Tovar>
+					<Order_Date>11.12.2018 10:46:09</Order_Date>
+					<Summa>1140</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000974">Твікс к. е. 100мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>238,68</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001017">Акробат МЦ в.г (20 г)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>387,15</Summa>
+					<kvo>32</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001409">Астера 30% в.р. (5 мл)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>790,88</Summa>
+					<kvo>80</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000982">Актор в.г (30г)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1415,58</Summa>
+					<kvo>31</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000982">Актор в.г (30г)</Tovar>
+					<Order_Date>29.03.2018 10:04:41</Order_Date>
+					<Summa>-178,41</Summa>
+					<kvo>-3</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000974">Твікс к. е. 100мл</Tovar>
+					<Order_Date>28.08.2018 13:57:43</Order_Date>
+					<Summa>-229,4</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000212">Метакса (5л)</Tovar>
+					<Order_Date>20.09.2018 15:50:46</Order_Date>
+					<Summa>-3448,5</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00000074">Дикамба Форте (л)</Tovar>
+					<Order_Date>18.01.2019 14:14:21</Order_Date>
+					<Summa>4890,6</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00000080">Шериф (0,5кг)</Tovar>
+					<Order_Date>18.01.2019 14:14:21</Order_Date>
+					<Summa>501,6</Summa>
+					<kvo>0,5</kvo>
+				</record>
+				<record>
+					<Manager id="000000078">Лисецька Оксана Владимировна</Manager>
+					<Tovar id="ФР-00000982">Актор в.г (30г)</Tovar>
+					<Order_Date>02.03.2018 17:38:00</Order_Date>
+					<Summa>-233,3</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001409">Астера 30% в.р. (5 мл)</Tovar>
+					<Order_Date>20.10.2018 12:30:42</Order_Date>
+					<Summa>-460</Summa>
+					<kvo>-40</kvo>
+				</record>
+				<record>
+					<Manager id="000000010">Савчук Ирина </Manager>
+					<Tovar id="ФР-00000212">Метакса (5л)</Tovar>
+					<Order_Date>15.01.2019 11:08:59</Order_Date>
+					<Summa>3360</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000013">Калаянова Ольга</Manager>
+					<Tovar id="ФР-00000982">Актор в.г (30г)</Tovar>
+					<Order_Date>23.11.2018 17:57:44</Order_Date>
+					<Summa>-233,3</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001018">Парацельс к.с. (аналог Імпакт) 4мл</Tovar>
+					<Order_Date/>
+					<Summa>11,7</Summa>
+					<kvo>2</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001406">Янтарная кислота, серия Аматор стимулятор роста 2г</Tovar>
+					<Order_Date/>
+					<Summa>22,4</Summa>
+					<kvo>7</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001114">Капуста брокколі Калабрезе Seedera, 0,5 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001019">Огірок Кураж F1 10 н Вассма</Tovar>
+					<Order_Date/>
+					<Summa>9</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001130">Капуста цвітна Мовір Seedera, 0,5 г</Tovar>
+					<Order_Date/>
+					<Summa>2,7</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001237">Диня Золотиста Вассма, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>2,85</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Укравит</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000122">Капітал, КС 5л</Tovar>
+					<Order_Date>17.12.2018 16:29:35</Order_Date>
+					<Summa>123000</Summa>
+					<kvo>150</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000143">Матадор, ТН (5л)</Tovar>
+					<Order_Date>12.09.2018 14:59:29</Order_Date>
+					<Summa>-1792,65</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00000247">Тандем, рк (5л)</Tovar>
+					<Order_Date>14.01.2019 11:12:18</Order_Date>
+					<Summa>715,4</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00000600">АС-Селектив ПРОФІ к.с (1л)</Tovar>
+					<Order_Date>21.01.2019 15:07:37</Order_Date>
+					<Summa>628,14</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00000143">Матадор, ТН (5л)</Tovar>
+					<Order_Date>22.01.2019 12:02:41</Order_Date>
+					<Summa>2144,65</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00000010">Віталайт, РК (5л)</Tovar>
+					<Order_Date>22.01.2019 12:06:20</Order_Date>
+					<Summa>2800</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000164">Бродівіт, Р 1л</Tovar>
+					<Order_Date>15.10.2018 16:08:04</Order_Date>
+					<Summa>-1172,5</Summa>
+					<kvo>-2</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000002">Агент СЕ (5л)</Tovar>
+					<Order_Date>06.12.2018 8:51:10</Order_Date>
+					<Summa>5090,2</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000004">Амісоль, РК (20л)</Tovar>
+					<Order_Date>06.12.2018 8:51:10</Order_Date>
+					<Summa>3391,6</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000164">Бродівіт, Р 1л</Tovar>
+					<Order_Date>20.12.2018 16:14:07</Order_Date>
+					<Summa>586,25</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00002154">Бромавіт (1л)</Tovar>
+					<Order_Date>26.12.2018 9:57:46</Order_Date>
+					<Summa>4440,3</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000002">Агент СЕ (5л)</Tovar>
+					<Order_Date>15.01.2019 11:55:24</Order_Date>
+					<Summa>8907,85</Summa>
+					<kvo>35</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000164">Бродівіт, Р 1л</Tovar>
+					<Order_Date>15.01.2019 13:14:39</Order_Date>
+					<Summa>565,73</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000157">Чепурних Володимир Михайлович</Manager>
+					<Tovar id="ФР-00000002">Агент СЕ (5л)</Tovar>
+					<Order_Date>24.12.2018 13:23:08</Order_Date>
+					<Summa>1350</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000172">Мандзіловський Олексій Іванович</Manager>
+					<Tovar id="ФР-00000600">АС-Селектив ПРОФІ к.с (1л)</Tovar>
+					<Order_Date>21.01.2019 13:06:24</Order_Date>
+					<Summa>772</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000010">Савчук Ирина </Manager>
+					<Tovar id="ФР-00000096">Димевіт, КЕ (20л)</Tovar>
+					<Order_Date>17.01.2019 11:26:47</Order_Date>
+					<Summa>3456,4</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000011">Дели Алексей </Manager>
+					<Tovar id="ФР-00000128">Фундазим, ЗП (1кг)</Tovar>
+					<Order_Date>06.06.2018 11:35:56</Order_Date>
+					<Summa>60</Summa>
+					<kvo/>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Баер</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001332">Каліпсо 480 SС к.с. 2мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>3371,82</Summa>
+					<kvo>300</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001336">Превікур Енерджі 840 SL в.р.к. 500мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>3568,27</Summa>
+					<kvo>6</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001366">Конфідор Максі 70% в.г. 1г</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>2217,28</Summa>
+					<kvo>400</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000839">Превікур Енерджі 840 SL в.р.к. 10мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1152,21</Summa>
+					<kvo>63</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001324">Превікур Енерджі 840 SL в.р.к. 60мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>4453,99</Summa>
+					<kvo>50</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001360">Престиж FS290 т.к.с. 150мл на 150кг</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>418,55</Summa>
+					<kvo>2</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001707">Інфініто 61 SC 687,5 к.с. 60мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>702,84</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001510">Протеус 110 OD о.д. 14мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>165,24</Summa>
+					<kvo>6</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001336">Превікур Енерджі 840 SL в.р.к. 500мл</Tovar>
+					<Order_Date>23.01.2019 0:00:00</Order_Date>
+					<Summa>6565</Summa>
+					<kvo>13</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00001324">Превікур Енерджі 840 SL в.р.к. 60мл</Tovar>
+					<Order_Date>17.03.2018 13:43:48</Order_Date>
+					<Summa>-176,56</Summa>
+					<kvo>-2</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00001336">Превікур Енерджі 840 SL в.р.к. 500мл</Tovar>
+					<Order_Date>05.04.2018 17:18:22</Order_Date>
+					<Summa>-2560</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00001324">Превікур Енерджі 840 SL в.р.к. 60мл</Tovar>
+					<Order_Date>05.04.2018 17:18:22</Order_Date>
+					<Summa>-617,96</Summa>
+					<kvo>-7</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001332">Каліпсо 480 SС к.с. 2мл</Tovar>
+					<Order_Date>20.10.2018 9:40:35</Order_Date>
+					<Summa>-1073</Summa>
+					<kvo>-100</kvo>
+				</record>
+				<record>
+					<Manager id="000000013">Калаянова Ольга</Manager>
+					<Tovar id="ФР-00001324">Превікур Енерджі 840 SL в.р.к. 60мл</Tovar>
+					<Order_Date>23.11.2018 17:57:44</Order_Date>
+					<Summa>-706,24</Summa>
+					<kvo>-8</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Сингента</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001335">Квадріс 250 SC к.с. 6мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1980,73</Summa>
+					<kvo>85</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001339">Скор (2мл)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>2344,38</Summa>
+					<kvo>200</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001325">Актара 25 WG в.г. (1,4г)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>2937,54</Summa>
+					<kvo>400</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001465">Ридоміл Голд МЦ 68 WG в.г. 50г</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1598,14</Summa>
+					<kvo>41</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001401">Тілт 2 мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>37,9</Summa>
+					<kvo>7</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001687">Енжіо 247 SC к.с. 100мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>2375,45</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001688">Енжіо 247 SC к.с.3,6мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1237,36</Summa>
+					<kvo>99</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001352">Ураган Форте 500 SL в.р.к. 100мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>2773,3</Summa>
+					<kvo>73</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001462">Проклейм 5SG в.г. 4г</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1560,57</Summa>
+					<kvo>100</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00003069">Ампліго 150 ZC, ф.к. (4мл)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1373,44</Summa>
+					<kvo>100</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001750">Матч 050 EC к.е. (4мл)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1016,84</Summa>
+					<kvo>100</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00006824">Насіння гібриду соняшника НК БРІО 2015</Tovar>
+					<Order_Date>21.01.2019 15:53:08</Order_Date>
+					<Summa>1700</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00001335">Квадріс 250 SC к.с. 6мл</Tovar>
+					<Order_Date>05.04.2018 16:34:21</Order_Date>
+					<Summa>-223,3</Summa>
+					<kvo>-10</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00006391">Насіння гібриду соняшника НК Неома Круїзер</Tovar>
+					<Order_Date>14.01.2019 9:44:34</Order_Date>
+					<Summa>32211</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001688">Енжіо 247 SC к.с.3,6мл</Tovar>
+					<Order_Date>16.10.2018 14:30:36</Order_Date>
+					<Summa>-527,4</Summa>
+					<kvo>-45</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001335">Квадріс 250 SC к.с. 6мл</Tovar>
+					<Order_Date>20.10.2018 12:30:42</Order_Date>
+					<Summa>-558,25</Summa>
+					<kvo>-25</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001339">Скор (2мл)</Tovar>
+					<Order_Date>20.10.2018 12:30:42</Order_Date>
+					<Summa>-1400</Summa>
+					<kvo>-100</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001352">Ураган Форте 500 SL в.р.к. 100мл</Tovar>
+					<Order_Date>20.10.2018 12:30:42</Order_Date>
+					<Summa>-683,2</Summa>
+					<kvo>-20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00003069">Ампліго 150 ZC, ф.к. (4мл)</Tovar>
+					<Order_Date>20.10.2018 12:30:42</Order_Date>
+					<Summa>-1311</Summa>
+					<kvo>-100</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00003151">Насіння гібриду соняшника Санай</Tovar>
+					<Order_Date>28.12.2018 14:58:51</Order_Date>
+					<Summa>15135,76</Summa>
+					<kvo>4</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006840">Насіння гібриду соняшника НК БРІО 2016</Tovar>
+					<Order_Date>14.01.2019 11:10:28</Order_Date>
+					<Summa>30000</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000013">Калаянова Ольга</Manager>
+					<Tovar id="ФР-00001352">Ураган Форте 500 SL в.р.к. 100мл</Tovar>
+					<Order_Date>23.11.2018 17:57:44</Order_Date>
+					<Summa>-580,72</Summa>
+					<kvo>-17</kvo>
+				</record>
+				<record>
+					<Manager id="000000013">Калаянова Ольга</Manager>
+					<Tovar id="ФР-00001688">Енжіо 247 SC к.с.3,6мл</Tovar>
+					<Order_Date>23.11.2018 17:57:44</Order_Date>
+					<Summa>-381,5</Summa>
+					<kvo>-35</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Саммит Агро</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001342">Топсин-М з.п. 10г</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>749,69</Summa>
+					<kvo>100</kvo>
+				</record>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001343">Топсин-М з.п. 25г</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>1724,11</Summa>
+					<kvo>112</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00001343">Топсин-М з.п. 25г</Tovar>
+					<Order_Date>17.03.2018 13:43:48</Order_Date>
+					<Summa>-73,15</Summa>
+					<kvo>-5</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001343">Топсин-М з.п. 25г</Tovar>
+					<Order_Date/>
+					<Summa>20</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Кемілайн Агро</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00006253">Брунька р.к. 100мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>115,61</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00006253">Брунька р.к. 100мл</Tovar>
+					<Order_Date/>
+					<Summa>137</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Дюпон</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00005856">Кораген 200 к.с. 50мл</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>3010,27</Summa>
+					<kvo>9</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">ФОП Шевченко</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001440">Рембек (220г)</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>17,3</Summa>
+					<kvo>3</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">АгроМаг</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001444">Рембек 360г</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>9,42</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Сидера</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00003718">Кукурудза розлусна Гостинець Seedera, 20 г</Tovar>
+					<Order_Date>22.12.2018 16:33:11</Order_Date>
+					<Summa>110,32</Summa>
+					<kvo>30</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00003718">Кукурудза розлусна Гостинець Seedera, 20 г</Tovar>
+					<Order_Date>20.10.2018 12:42:29</Order_Date>
+					<Summa>-80</Summa>
+					<kvo>-20</kvo>
+				</record>
+				<record>
+					<Manager id="000000172">Мандзіловський Олексій Іванович</Manager>
+					<Tovar id="ФР-00003167">Картопля Діва Seedera (0,02г)</Tovar>
+					<Order_Date>15.01.2019 10:02:49</Order_Date>
+					<Summa>192</Summa>
+					<kvo>40</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00000993">Баклажан Алмаз Seedera, 0,5 г</Tovar>
+					<Order_Date/>
+					<Summa>5</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00000999">Перець Лайлак Бел SeedEra (0,2г)</Tovar>
+					<Order_Date/>
+					<Summa>2,85</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001002">Перець Шорокшари SeedEra (0,2г)</Tovar>
+					<Order_Date/>
+					<Summa>2,85</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001100">Морква столова ВІТАМІННА-6 Seedera, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>3,4</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001103">Морква столова Королева Осені Seedera, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00005694">Квіти Петунія бахромчаста великоквіткова низькоросла Червоний Пірует F1 Seedera, 10 шт.</Tovar>
+					<Order_Date/>
+					<Summa>14</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00004707">Огірок Бєлка F1 SeedEra 10 шт.</Tovar>
+					<Order_Date/>
+					<Summa>9,8</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001216">Гарбуз Хеллоуїн Seedera, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>3</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00005379">Морква столова Московська зимова Seedera, 2г</Tovar>
+					<Order_Date/>
+					<Summa>4,8</Summa>
+					<kvo>2</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001079">Томат Ляна Seedera, 0,1 г</Tovar>
+					<Order_Date/>
+					<Summa>64,8</Summa>
+					<kvo>27</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001259">Горох овочевий Альфа Seedera, 20 г</Tovar>
+					<Order_Date/>
+					<Summa>3,9</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001808">Перець солодкий Оранжеве Чудо SeedEra (0,2г)</Tovar>
+					<Order_Date/>
+					<Summa>2,85</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003321">Морква столова Шантане Роял Seedera, 20 г</Tovar>
+					<Order_Date/>
+					<Summa>12</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003847">Буряк столовий Червона куля Seedera, 10г</Tovar>
+					<Order_Date/>
+					<Summa>11,7</Summa>
+					<kvo>2</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001112">Морква столова Артек Seedеra, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>2,7</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001116">Капуста пекінська Гранат Seedera, 0,5 г</Tovar>
+					<Order_Date/>
+					<Summa>2,25</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001242">Диня КОЛГОСПНИЦЯ Seedera, 10 г</Tovar>
+					<Order_Date/>
+					<Summa>10,5</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001244">Кавун ЧАРЛЬСТОН ГРЕЙ Seedera, 10 г</Tovar>
+					<Order_Date/>
+					<Summa>10,8</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003950">Пряно-ароматична культура Рукола Міні пікантна SeedEra 10г.</Tovar>
+					<Order_Date/>
+					<Summa>21</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001104">Морква столова ОЛЕНКА Seedera, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001105">Морква столова Шантане Seedera, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001106">Морква Шантане Роял SeedEra (2г)</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001107">Морква столова Нантська Seedera, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001125">Капуста білоголова Іюньська Seedera, 0,5 г</Tovar>
+					<Order_Date/>
+					<Summa>2,4</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001145">Пряно-ароматична культура Коріандр посівний Янтар (кінза) Seedera, 3 г</Tovar>
+					<Order_Date/>
+					<Summa>2,25</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001928">Кавун Продюсер Seedera, (10г)</Tovar>
+					<Order_Date/>
+					<Summa>10,8</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003876">Томат Волгоградський 5/95 Seedera, 3 г</Tovar>
+					<Order_Date/>
+					<Summa>21</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003721">Салат АЙСГРІН (хрусткий качанний) Seedеra, 10 г</Tovar>
+					<Order_Date/>
+					<Summa>15,75</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003193">Квіти Ешольція каліфорнійська махрова суміш Seedera, 0,3 г</Tovar>
+					<Order_Date/>
+					<Summa>3,3</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001038">Огірок Смак F1 SeedEra (0,5г)</Tovar>
+					<Order_Date/>
+					<Summa>2,8</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001042">Огірок Руфус F1 SeedEra (1г)</Tovar>
+					<Order_Date/>
+					<Summa>5,6</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001194">Буряк столовий Делікатесний Seedera, 3 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001227">Кавун Княжич Seedera, 2 г</Tovar>
+					<Order_Date/>
+					<Summa>3,3</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001233">Кавун Астраханський Seedera, 1 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003714">Квіти Колеус Стандарт суміш Seedera, 0,1 г</Tovar>
+					<Order_Date/>
+					<Summa>6,8</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003719">Морква столова МОСКОВСЬКА ЗИМОВА Seedеra, 20 г</Tovar>
+					<Order_Date/>
+					<Summa>13,4</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001834">Перець Анастасія Seedera (0,2г)</Tovar>
+					<Order_Date/>
+					<Summa>2,85</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00002687">Огірок Колібрі F1 Seedera 10 шт.</Tovar>
+					<Order_Date/>
+					<Summa>10,5</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003777">Томат Ріо Гранде SeedEra 0.1г</Tovar>
+					<Order_Date/>
+					<Summa>2,4</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001190">Буряк столовий Червона куля Seedera, 3 г</Tovar>
+					<Order_Date/>
+					<Summa>2,55</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001191">Буряк столовий Циліндра Seedera, 3 г</Tovar>
+					<Order_Date/>
+					<Summa>7,65</Summa>
+					<kvo>3</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Щелково Агрохим</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00002053">Гермес, МД (10л)</Tovar>
+					<Order_Date>10.01.2019 12:18:32</Order_Date>
+					<Summa>6700</Summa>
+					<kvo>10</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Долина</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000201">Мікродобриво "Оракул мультикомплекс" 10л</Tovar>
+					<Order_Date>10.01.2019 12:18:32</Order_Date>
+					<Summa>1100</Summa>
+					<kvo>10</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Агрохімічні технології</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00000967">Фосорган Дуо (5л)</Tovar>
+					<Order_Date>17.01.2019 0:00:00</Order_Date>
+					<Summa>11600</Summa>
+					<kvo>40</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00003386">Геліос Екстра ( 20л)</Tovar>
+					<Order_Date>27.12.2018 13:00:09</Order_Date>
+					<Summa>6990</Summa>
+					<kvo>40</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Китай</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000033">Валерий Левченко</Manager>
+					<Tovar id="ФР-00001498">Гранстар Про 75 (0,5кг) (Китай)</Tovar>
+					<Order_Date>22.01.2019 11:33:32</Order_Date>
+					<Summa>600</Summa>
+					<kvo>0,5</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">ФГ "Колос" Харьков</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000045">ФОП Левченко</Manager>
+					<Tovar id="ФР-00006643">Семена подсолнечника Ясон 2018 (стандарт) ФГ "Колос" </Tovar>
+					<Order_Date>15.01.2019 10:47:38</Order_Date>
+					<Summa>4200</Summa>
+					<kvo>7</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00006644">Семена подсолнечника Ясон 2018 (экстра) ФГ "Колос" </Tovar>
+					<Order_Date>27.12.2018 13:00:09</Order_Date>
+					<Summa>8060</Summa>
+					<kvo>13</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00006645">Семена подсолнечника  Златсон (экстра) 2018 ФГ "Колос" </Tovar>
+					<Order_Date>22.01.2019 12:06:20</Order_Date>
+					<Summa>8530</Summa>
+					<kvo>12</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006644">Семена подсолнечника Ясон 2018 (экстра) ФГ "Колос" </Tovar>
+					<Order_Date>04.12.2018 11:59:56</Order_Date>
+					<Summa>1020</Summa>
+					<kvo>2</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Мінераліс</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000729">Микро минералис масличные (10л)</Tovar>
+					<Order_Date>18.05.2018 9:35:31</Order_Date>
+					<Summa>-1065</Summa>
+					<kvo>-20</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000729">Микро минералис масличные (10л)</Tovar>
+					<Order_Date>20.05.2018 10:58:21</Order_Date>
+					<Summa>-1065</Summa>
+					<kvo>-20</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000879">Микро Минералис бор (10л)</Tovar>
+					<Order_Date>30.05.2018 15:58:50</Order_Date>
+					<Summa>-825</Summa>
+					<kvo>-10</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000879">Микро Минералис бор (10л)</Tovar>
+					<Order_Date>31.05.2018 12:13:21</Order_Date>
+					<Summa>-3300</Summa>
+					<kvo>-40</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000879">Микро Минералис бор (10л)</Tovar>
+					<Order_Date>18.06.2018 12:17:54</Order_Date>
+					<Summa>-1650</Summa>
+					<kvo>-20</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000732">Микро Минеральс Фосфор+Калий (10л)</Tovar>
+					<Order_Date>14.09.2018 15:21:32</Order_Date>
+					<Summa>-1320</Summa>
+					<kvo>-20</kvo>
+				</record>
+				<record>
+					<Manager id="000000050">Крутень Денис</Manager>
+					<Tovar id="ФР-00000727">Микро Минералис Зерновые (10л)</Tovar>
+					<Order_Date>21.09.2018 13:35:57</Order_Date>
+					<Summa>-1050</Summa>
+					<kvo>-20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000727">Микро Минералис Зерновые (10л)</Tovar>
+					<Order_Date>12.11.2018 13:35:04</Order_Date>
+					<Summa>-2100</Summa>
+					<kvo>-40</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000732">Микро Минеральс Фосфор+Калий (10л)</Tovar>
+					<Order_Date>12.11.2018 14:44:43</Order_Date>
+					<Summa>-6600</Summa>
+					<kvo>-100</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000732">Микро Минеральс Фосфор+Калий (10л)</Tovar>
+					<Order_Date>23.01.2019 11:56:02</Order_Date>
+					<Summa>6580</Summa>
+					<kvo>100</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000727">Микро Минералис Зерновые (10л)</Tovar>
+					<Order_Date>23.01.2019 11:56:02</Order_Date>
+					<Summa>2128</Summa>
+					<kvo>40</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000729">Микро минералис масличные (10л)</Tovar>
+					<Order_Date>23.01.2019 11:59:03</Order_Date>
+					<Summa>1078</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000732">Микро Минеральс Фосфор+Калий (10л)</Tovar>
+					<Order_Date>23.01.2019 12:03:19</Order_Date>
+					<Summa>1316</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000879">Микро Минералис бор (10л)</Tovar>
+					<Order_Date>23.01.2019 12:03:19</Order_Date>
+					<Summa>4200</Summa>
+					<kvo>50</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000727">Микро Минералис Зерновые (10л)</Tovar>
+					<Order_Date>23.01.2019 12:03:19</Order_Date>
+					<Summa>1064</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000729">Микро минералис масличные (10л)</Tovar>
+					<Order_Date>23.01.2019 12:03:19</Order_Date>
+					<Summa>1078</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00000879">Микро Минералис бор (10л)</Tovar>
+					<Order_Date>23.01.2019 12:05:07</Order_Date>
+					<Summa>1680</Summa>
+					<kvo>20</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Аптека Садівника</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000054">Радьков Дмитрий</Manager>
+					<Tovar id="ФР-00006729">КАПКАН - принада № 1 проти гризунів, відро 6 кг   </Tovar>
+					<Order_Date>18.01.2019 15:49:27</Order_Date>
+					<Summa>602</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000054">Радьков Дмитрий</Manager>
+					<Tovar id="ФР-00003765">Багіра - принада для знищення мишовидних гризунів, пр. (парафіновані брикети) /100г/</Tovar>
+					<Order_Date>18.01.2019 15:49:27</Order_Date>
+					<Summa>166</Summa>
+					<kvo>20</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00003555">Тісто у фільтр пакеті від гризунів 200г </Tovar>
+					<Order_Date/>
+					<Summa>12,8</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Басф</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000054">Радьков Дмитрий</Manager>
+					<Tovar id="ФР-00003571">Вивандо </Tovar>
+					<Order_Date>21.01.2019 10:57:27</Order_Date>
+					<Summa>5200</Summa>
+					<kvo>2</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00003571">Вивандо </Tovar>
+					<Order_Date>13.12.2018 13:57:14</Order_Date>
+					<Summa>-2601</Summa>
+					<kvo>-1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">КИВ</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000054">Радьков Дмитрий</Manager>
+					<Tovar id="ФР-00006179">Семена подсолнечника Рекольд  экстра КИВ 2018</Tovar>
+					<Order_Date>23.01.2019 16:22:29</Order_Date>
+					<Summa>8500</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00006180">Семена подсолнечника Рекольд  стандарт КИВ 2018</Tovar>
+					<Order_Date>17.01.2019 12:03:21</Order_Date>
+					<Summa>14750</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006230">Насіння гібриду соняшника Матадор (стандарт) КИВ 2018</Tovar>
+					<Order_Date>27.12.2018 15:36:14</Order_Date>
+					<Summa>10455</Summa>
+					<kvo>6</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006226">Насіння гібриду соняшника Флорімі (екстра) КИВ 2018</Tovar>
+					<Order_Date>14.01.2019 11:10:28</Order_Date>
+					<Summa>297160</Summa>
+					<kvo>152</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006232">Насіння гібриду соняшника Матадор (екстра) КИВ 2018</Tovar>
+					<Order_Date>14.01.2019 11:10:28</Order_Date>
+					<Summa>67923,5</Summa>
+					<kvo>34</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001642">Семена подсолнечника Аракар (гибрид) стандарт (КИВ) 2018</Tovar>
+					<Order_Date>17.01.2019 10:56:52</Order_Date>
+					<Summa>16150</Summa>
+					<kvo>10</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006225">Насіння гібриду соняшника Флорімі (стандарт) КИВ 2018</Tovar>
+					<Order_Date>17.01.2019 10:56:52</Order_Date>
+					<Summa>26775</Summa>
+					<kvo>15</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006226">Насіння гібриду соняшника Флорімі (екстра) КИВ 2018</Tovar>
+					<Order_Date>17.01.2019 10:56:52</Order_Date>
+					<Summa>27370</Summa>
+					<kvo>14</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006625">Семена Подсолнечника Лимит (гибрид) стандарт (КИВ) 2018</Tovar>
+					<Order_Date>17.01.2019 10:56:52</Order_Date>
+					<Summa>16150</Summa>
+					<kvo>10</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Євросем</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00006128">Насіння гібриду соняшника Пегас (NS H 6341) стандарт 2018</Tovar>
+					<Order_Date>18.10.2018 9:46:43</Order_Date>
+					<Summa>7200</Summa>
+					<kvo>3</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Степова</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00006812">Семена кукурузы | Днепровський 181 св (Степовая) протруєно Максим XL 035 2018</Tovar>
+					<Order_Date>26.12.2018 12:18:04</Order_Date>
+					<Summa>2250</Summa>
+					<kvo>3</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00003262">Насіння гібриду кукурудзи  Дніпровський 257 СВ протруєно Максим XL 035 2018</Tovar>
+					<Order_Date>22.11.2018 14:20:35</Order_Date>
+					<Summa>8580</Summa>
+					<kvo>12</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Альфа Насіння</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000065">Кукіна Наталія</Manager>
+					<Tovar id="ФР-00006752">Насіння гібриду соняшника Анцилла 2017 (стандарт)</Tovar>
+					<Order_Date>26.12.2018 13:19:21</Order_Date>
+					<Summa>7500</Summa>
+					<kvo>5</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006752">Насіння гібриду соняшника Анцилла 2017 (стандарт)</Tovar>
+					<Order_Date>05.12.2018 11:54:59</Order_Date>
+					<Summa>-6740,25</Summa>
+					<kvo>-5</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Адама</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00000231">Шавит (1кг)</Tovar>
+					<Order_Date>15.01.2019 9:23:52</Order_Date>
+					<Summa>609</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Фертис</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00003202">NPK 13-10-15+ME (3 кг) "Весна" універсальне</Tovar>
+					<Order_Date>22.01.2019 16:26:13</Order_Date>
+					<Summa>215</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00001254">NPK 11-9-20+ME (3 кг) для полуниці</Tovar>
+					<Order_Date>22.01.2019 16:26:13</Order_Date>
+					<Summa>215</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000098">Лєйкіна Тетяна Юріївна</Manager>
+					<Tovar id="ФР-00001281">NPK 5-15-25 (3 кг) "Осінь"</Tovar>
+					<Order_Date>22.01.2019 16:26:13</Order_Date>
+					<Summa>215</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Терра Юг</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006321">Насіння гібриду соняшника "Ричард" (екстра)</Tovar>
+					<Order_Date>28.12.2018 14:58:51</Order_Date>
+					<Summa>3744</Summa>
+					<kvo>2</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001749">Насіння льону "Дунай" 25кг</Tovar>
+					<Order_Date>15.01.2019 11:55:24</Order_Date>
+					<Summa>2100</Summa>
+					<kvo>75</kvo>
+				</record>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006888">Насіння льону "Парус" 25 кг</Tovar>
+					<Order_Date>15.01.2019 11:55:24</Order_Date>
+					<Summa>2400</Summa>
+					<kvo>75</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Нертус</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00001529">Насіння соняшника Рімісол (стандарт) 2018 Нертус</Tovar>
+					<Order_Date>14.01.2019 11:10:28</Order_Date>
+					<Summa>45843,3</Summa>
+					<kvo>30</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00006097">Насіння соняшника Рімісол (еліт) 2018 Нертус</Tovar>
+					<Order_Date>29.12.2018 11:27:32</Order_Date>
+					<Summa>140000</Summa>
+					<kvo>50</kvo>
+				</record>
+				<record>
+					<Manager id="000000172">Мандзіловський Олексій Іванович</Manager>
+					<Tovar id="ФР-00006097">Насіння соняшника Рімісол (еліт) 2018 Нертус</Tovar>
+					<Order_Date>14.01.2019 11:09:54</Order_Date>
+					<Summa>18553</Summa>
+					<kvo>6</kvo>
+				</record>
+				<record>
+					<Manager id="000000010">Савчук Ирина </Manager>
+					<Tovar id="ФР-00001529">Насіння соняшника Рімісол (стандарт) 2018 Нертус</Tovar>
+					<Order_Date>11.01.2019 14:56:37</Order_Date>
+					<Summa>6261</Summa>
+					<kvo>3</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Деметра</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000133">Черленок Генадій Миколайович</Manager>
+					<Tovar id="ФР-00006707">ТОКСІФОС 560TAB (18 х 1,0кг)</Tovar>
+					<Order_Date>16.01.2019 15:43:54</Order_Date>
+					<Summa>1376,55</Summa>
+					<kvo>5</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Mirasol Seed</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000008">Левченко Виталий</Manager>
+					<Tovar id="ФР-00004682">Насіння соняшника Сірроко</Tovar>
+					<Order_Date>03.03.2018 13:43:03</Order_Date>
+					<Summa>-48731,76</Summa>
+					<kvo>-15</kvo>
+				</record>
+				<record>
+					<Manager id="000000008">Левченко Виталий</Manager>
+					<Tovar id="ФР-00004682">Насіння соняшника Сірроко</Tovar>
+					<Order_Date>14.01.2019 14:51:34</Order_Date>
+					<Summa>50000</Summa>
+					<kvo>15</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Пионер</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000008">Левченко Виталий</Manager>
+					<Tovar id="ФР-00006368">Насіння соняшника П64ЛЕ25 (P64LE25) Круїзер 350 FS</Tovar>
+					<Order_Date>14.01.2019 9:47:07</Order_Date>
+					<Summa>13950</Summa>
+					<kvo>3</kvo>
+				</record>
+				<record>
+					<Manager id="000000008">Левченко Виталий</Manager>
+					<Tovar id="ФР-00006368">Насіння соняшника П64ЛЕ25 (P64LE25) Круїзер 350 FS</Tovar>
+					<Order_Date>14.01.2019 11:44:26</Order_Date>
+					<Summa>27900</Summa>
+					<kvo>6</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Сарниторф </Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00005679">Фульво-гумінове добриво Концентроване 20</Tovar>
+					<Order_Date/>
+					<Summa>1400</Summa>
+					<kvo>20</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Смарт-гроу</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00001371">Редіска PRADA (1 кг)</Tovar>
+					<Order_Date/>
+					<Summa>1043,7</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Кращий Урожай</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00005818">Огурец дражированный Цезарь F1 среднеспелый (КУ) 10шт</Tovar>
+					<Order_Date/>
+					<Summa>9</Summa>
+					<kvo>1</kvo>
+				</record>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00005814">Огурец дражированный Верные друзья скороспелый(КУ)10шт</Tovar>
+					<Order_Date/>
+					<Summa>18</Summa>
+					<kvo>2</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Рекорд</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00005830">Субстрат для квітучих рослин, мішок (5л)</Tovar>
+					<Order_Date/>
+					<Summa>25,7</Summa>
+					<kvo>1</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+		<group_Manufacturer>
+			<Manufacturer id="">Гран</Manufacturer>
+			<records>
+				<record>
+					<Manager id="000000142">Мельник Іванна Сергіївна</Manager>
+					<Tovar id="ФР-00004893">Люцерна Банат </Tovar>
+					<Order_Date/>
+					<Summa>188</Summa>
+					<kvo>2</kvo>
+				</record>
+			</records>
+		</group_Manufacturer>
+	</SalesManufacturer>
+</main>

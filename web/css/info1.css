@@ -1,0 +1,353 @@
+.hectare-info{
+    background: url("../img/info/info-header.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-bottom: 2px solid #ff7e19;
+}
+
+.hectare-info-header{
+    padding-top: 30px;
+}
+
+.hectare-info .main-page{
+    color: #ff7e19;
+    margin-left: 50px;
+    position: relative;
+    text-decoration: none;
+}
+
+.hectare-info .main-page:hover .glyphicon-menu-left{
+    margin-left: -10px;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+
+.hectare-info-header .header-top-languagePicker{
+    position: absolute;
+    right: 50px;
+    width: 50px;
+    height: 40px;
+    top: 20px;
+    line-height: 40px;
+    background: url(../img/info/select1.png) no-repeat 80% center;
+    border: none;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 1.2rem;
+    color: #ff7e19;
+    text-transform: uppercase;
+}
+
+.glyphicon-menu-left:first-child{
+    position: absolute;
+    left: -6px;
+    top: 0;
+}
+
+.contacts-social{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+
+.contacts-social__item {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.contacts-social a {
+    text-align: center;
+    font-size: 25px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.interview-header{
+    font-size: 50px;
+    font-family: "Tahoma";
+    color: #d77834;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow:
+            #c9cbca 2px 2px 0, #c9cbca -2px -2px 0,
+            #c9cbca -2px 2px 0, #c9cbca 2px -2px 0,
+            0px 4px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.interview-content{
+    background-color: #e2e2e2;
+}
+
+/*Content*/
+
+.historypage  h2 {
+
+    margin-bottom: 30px;
+    /* margin-top: 50px;
+    border-top: 1px dashed lightgrey;
+    padding-top: 30px; */
+}
+
+.historyitemtitle {
+    cursor:pointer;
+    text-align:left;
+    font-weight:bold;
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    border-bottom: 2px solid #575757;
+}
+.historyitemtitle.active {color:#ff7e19; background-color: #ff7e19; border-bottom: none;}
+.historypage h2::before{
+    content: "";
+    background: url(/img/leaves.png) no-repeat;
+    width: 27px;
+    height: 36px;
+    margin-left: -30px;
+    position: absolute;
+    display: inline-block;
+}
+.historypage ul {margin-left:20px;text-align:left;}
+.historypage ul {
+    text-align: left;
+    padding-left: 30px;
+}
+.historypage li{
+    list-style-image: url(/img/leavess.png);
+    line-height: 1.45;
+}
+.maintext{
+    font-size: 120%;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+.infblock {
+    position: relative;
+    display: inline-block;
+    float: none;
+    clear: both;
+    width: 100%;
+    background-color: #e2e2e2;
+    padding-top: 15px;
+}
+.historyitemtext {
+    width: 100%;
+}
+
+.historyitemtitle:hover::after {
+    background: #ff7e19;
+}
+.historyitemtitle:hover::after {
+    width:100%;
+}
+.historyitemtitle:hover {
+    color:#ff7e19;
+}
+
+.historyitemtitle span{
+    display: block;
+    background-color: #fbfbfb;
+    width: 97%;
+    height: 94%;
+}
+
+.historymenu > div {
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.historymenu > div {
+    border-right: 8px solid #575757;
+    text-align: center;
+}
+
+.historymenu >div:nth-child(odd):hover, .historymenu >div:nth-child(even):hover {
+    background: #fff;
+    position: relative;
+    z-index: 0;
+}
+.historymenu  >div:after {
+    content: "";
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 0px;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+.historymenu  >div:after {
+    background: #ff7e19;
+}
+.historymenu  >div:hover:after {
+    width: 100%;
+}
+.historymenu  >div:hover:after {
+    background: #ff7e19;
+}
+
+.history__img_sep h3 {
+    width: 130px;
+    margin-top: 0;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 10px 0;
+    background-color: #ff7e19;
+    color: #fff;
+    padding: 5px;
+}
+
+.history__img_sep .views {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 17px;
+    color: #868080;
+}
+
+.history__img_sep img{
+    width: 100%;
+    background-size: cover;
+}
+
+.info-content{
+    min-height: 400px;
+}
+
+.issue-info a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #575757;
+    margin-top: 0;
+}
+
+.issue-desc{
+    color: #807f7f;
+    text-align: justify;
+}
+
+.issue-info{
+    background-color: #ffffff;
+    padding: 10px 15px 1px 15px;
+    height: 170px;
+	margin-bottom: 10px
+}
+
+.issue-author{
+    color: #b0afaf;
+    letter-spacing: 2pt;
+}
+
+.history__img_sep .row{
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 1.2rem;
+    background: rgb(67,67,67);
+    position: relative;
+}
+
+.historyitemtext:not(:first-child) .info-img:first-of-type{
+    display: block;
+    height: 15vw;
+    overflow: hidden;
+    background: #fff;
+}
+
+.one-issue .views{
+    position:unset;
+}
+
+.one-issue .info-img{
+    height: unset;
+    float: left;
+}
+
+.one-issue .issue-info{height:unset; min-height: 300px;}
+
+.one-issue .issue-desc{
+    overflow: unset;
+    display: unset;
+}
+
+.one-issue .issue-author{
+    margin-top: 20px;
+}
+
+.one-issue .issue-header{text-align:center;}
+
+.issue-desc{
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+
+.books .thumbnail {
+    margin-bottom: 0;
+    border: unset;
+    border-radius: 4px 4px 0 0;
+	max-height: 250px;
+    overflow: hidden;
+}
+
+
+/*-----------*/
+
+@media screen and (max-width: 990px) {
+
+    .historyitemtext:not(:first-child) .info-img:first-of-type{
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hectare-info{
+        max-height: 150px;
+    }
+
+    .contacts-social{
+        right: 10px;
+        bottom: 0;
+    }
+
+    .hectare-info .main-page{
+        margin-left: 10px;
+    }
+
+    .hectare-info-header .header-top-languagePicker{
+        right: 10px;
+        top: 0;
+    }
+
+    .hectare-info-header {
+        padding-top: 10px;
+    }
+	
+	.interview-header{
+        font-size: 40px;
+    }
+
+}

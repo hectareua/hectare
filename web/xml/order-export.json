@@ -1,0 +1,31 @@
+{
+    "order_id": 20816,
+    "user_phone": "0961259645",
+    "ordered_at": "2017-05-30 18:01:20",
+    "payment_system_id": 2,
+    "comment": "доставка Нова пошта склад №250 м. Київ, вул. Пушкінська 45\/2 ",
+    "status_id": 1,
+    "order_details": {
+        "ФР-00000040": {
+            "quantity": 1,
+            "price": "2341.2750"
+        },
+        "ФР-00000019": {
+            "quantity": 1,
+            "price": "906.3000"
+        }
+    }
+}{
+    "order_id": 21850,
+    "user_phone": "0673861992",
+    "ordered_at": "2017-08-28 11:14:55",
+    "payment_system_id": 1,
+    "comment": null,
+    "status_id": 1,
+    "order_details": {
+        "ФР-00000035": {
+            "quantity": 1,
+            "price": "290.9700"
+        }
+    }
+}
