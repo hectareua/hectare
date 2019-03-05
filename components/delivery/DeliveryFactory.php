@@ -15,16 +15,17 @@ class DeliveryFactory
 {
     /**
      * @param $deliveryType
+     * @param integer $weight
      * @return DeliveryCalculator|null
      */
-    public static function create($deliveryType)
+    public static function create($deliveryType, $weight = 0)
     {
         switch ($deliveryType){
             case Order::DELIVERY_TYPE_TO_HOME:
-                $deliveryCalculator = new HomeDelivery();
+                $deliveryCalculator = new HomeDelivery($weight);
                 break;
             case Order::DELIVERY_TYPE_MOMENT_TO_HOME:
-                $deliveryCalculator = new MomentDelivery();
+                $deliveryCalculator = new MomentDelivery($weight);
                 break;
             default:
                 $deliveryCalculator = null;
