@@ -3134,3 +3134,61 @@ GREEN
     padding-right: 20px;
     text-align: center;
 }
+.delivery-radio-container{
+    padding-top: 20px;
+}
+
+.delivery-radio-container label{
+    font-size: 17px;
+}
+
+.delivery-radio-container img.img-home{
+    margin-left: 321px;
+}
+
+.delivery-radio-container img.img-moment{
+    margin-left: 238px;
+}
+
+.delivery_type-price{
+    display: inline-block;
+    color: #30a530;
+    font-size: 16px;
+    margin-left: -121px;
+    font-family: "OpenSans-Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.delivery_type-price.home{
+    margin-left: -331px;
+}
+
+.delivery_type-price.moment-home{
+    margin-left: -244px;
+}
+
+.orderForm-main_delivery{
+    margin-top: -38px;
+}
+
+.header-type_of_delivery, .delivery-radio-container label{
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: #575757;
+    font-family: "OpenSans-Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.delivery-radio-container input[type=radio] {
+    margin-right: 28px;
+}
+
+.delivery-free{
+    padding-left: 45px;
+    font-size: 13px;
+}
+
+.need_price{
+    display: inline;
+    color: red;
+}
