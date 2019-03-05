@@ -1,4 +1,5 @@
 function clearMessages() {
+  $('#delivery-price').val('');
   $(".delivery_type-message, .delivery_type-price").each(function( i ) {
     $(this).html('');
   });
@@ -30,12 +31,17 @@ function caclulateDelivery() {
             $el.find('.delivery_type-price').html('Доступно безкоштовно');
           } else {
             $el.find('.delivery_type-message').html(response.html);
-            $el.find('.delivery_type-price').html(': ' + response.price + ' грн.');
+            $el.find('.delivery_type-price').html(response.price + ' грн.');
           }
-          
+        }
+        if (response.totalPrice){
+          $('#total-order-price').html(response.totalPrice);
+          $('#total-price').val(response.totalPrice);
         }
       }
     });
+  } else {
+    clearMessages();
   }
 }
 
