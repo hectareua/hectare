@@ -1,6 +1,7 @@
 <?php
 	namespace app\modules\documentflow\models;
 
+	use app\modules\documentflow\components\damp;
 	use yii\base\Model;
 	use yii\web\UploadedFile;
 
@@ -40,7 +41,7 @@
 		 * @return bool
 		 * Upload documents
 		 */
-		public function uploadDocument($id_user,$id_doc)
+		public function uploadDocument($id_user)
 		{
 			$path = \Yii::getAlias('@documentflow').'/documents/';
 			if ($this->validate()) {
@@ -48,13 +49,12 @@
 				{
 					mkdir($path . $id_user, 0777 ,true);
 				}
-				$aftersave = UserDocumentFlow::findOne($id_doc);
-				$aftersave -> path_to_doc = \Yii::getAlias('@documentflow').'/documents/';
-				if($aftersave -> save()) {
-					$this->document->saveAs($path . $id_user . '/' . $this->document->baseName . '_' . $this -> randomNumber() . '.' . $this->document->extension);
+				$nameDoc = $this->document->baseName . '_' . $this -> randomNumber() . '.' . $this->document->extension;
+				if($this->document->saveAs($path . $id_user . '/' . $nameDoc)){
+					return \Yii::getAlias('@documentflow').'/documents/'.$id_user.'/'.$nameDoc;
 				}
-				return true;
 			} else {
+				damp::dd($this -> errors);
 				return false;
 			}
 		}

@@ -8,10 +8,10 @@
 	namespace app\modules\documentflow\controllers;
 	use app\models\User;
 	use app\modules\documentflow\components\Controller;
-	use app\modules\documentflow\models\damp;
+	use app\modules\documentflow\components\damp;
+	use app\modules\documentflow\models\uploadForm;
 	use app\modules\documentflow\models\UserDocumentFlow;
 	use app\modules\documentflow\models\UserDocumentLink;
-	use app\modules\documentflow\models\uploadForm;
 	use app\modules\documentflow\models\UserTypeSend;
 	use yii\bootstrap\ActiveForm;
 	use yii\web\Response;
@@ -25,31 +25,59 @@
 	class DocumentController extends Controller
 	{
 
-		/**
-		 * @var string
-		 * Type user
-		 */
-		public $type = '';
+//		public $ip_dev = '217.77.212.240';
+		public $ip_dev = '212.92.238.35';
 
 		public function index()
 		{
+			$user_type = Yii::$app -> user -> identity -> ctype;
 			$modelDocLink = new UserDocumentLink();
 			$modelFlowDoc = new UserDocumentFlow();
+			return $this -> render('index',[
+				'documents' => UserDocumentLink::getDocument(),
+				'modelFlowDoc' => $modelFlowDoc,
+				'modelDocLink' => $modelDocLink,
+				'selectData' => $this -> getTypeSelectForUser(),
+				'user_type' => $user_type
+			]);
+		}
 
-			$user = User::findOne(797);
-			if($user -> id === Yii::$app -> user -> identity -> getId()) {
-				return $this -> render('index',[
-					'documents' => UserDocumentLink::getDocument(),
-					'modelFlowDoc' => $modelFlowDoc,
-					'modelDocLink' => $modelDocLink,
-					'partners' => UserTypeSend::getPartners(),
-					'manufacturers' => UserTypeSend::getManufacturers(),
-					'accountants' => UserTypeSend::getAccountants(),
-					'lawyers' => UserTypeSend::getLawyers(),
-				]);
-			} else {
-				return "Данный раздел в разработке :) \n погодь пока что) кодер делате себе чаек ;)";
+		/**
+		 * @return array
+		 * @throws \yii\db\Exception
+		 */
+		private function getTypeSelectForUser()
+		{
+			switch(Yii::$app -> user -> identity -> ctype)
+			{
+				case UserTypeSend::USER_TYPE_PARTNERS :
+					$result = [
+						'Бугалтер' => UserTypeSend::getAccountants(),
+						'Юрист' => UserTypeSend::getLawyers()
+					];
+					break;
+				case UserTypeSend::USER_TYPE_MANUFACTURERS :
+					$result = [
+						'Бугалтер' => UserTypeSend::getAccountants(),
+						'Юрист' => UserTypeSend::getLawyers()
+					];
+					 break;
+				case UserTypeSend::USER_TYPE_ACCOUNTANTS:
+					$result = [
+						'Партнер' => UserTypeSend::getPartners(),
+						'Производитель' => UserTypeSend::getManufacturers(),
+						'Юрист' => UserTypeSend::getLawyers()
+					];
+					break;
+				case UserTypeSend::USER_TYPE_LAWYERS :
+					$result = [
+						'Партнер' => UserTypeSend::getPartners(),
+						'Производитель' => UserTypeSend::getManufacturers(),
+						'Бугалтер' => UserTypeSend::getAccountants()
+					];
+					break;
 			}
+			return $result;
 		}
 
 		/**
@@ -99,23 +127,52 @@
 		 * Download file
 		 * @return mixed
 		 */
-		public function actionDownloadDocument($name,$id)
+		public function actionDownloadDocument($pathdoc)
 		{
-			$path = Yii::getAlias('@documentflow').'/documents/'.$id.'/'.$name;
-			return Yii::$app->response->sendFile($path, $name)->send();
+			$name = array_reverse(explode('/',$pathdoc))[0];
+			return Yii::$app->response->sendFile($pathdoc, $name)->send();
 		}
 
 		/**
-		 * @param $name
-		 * @param $id
-		 *
-		 * @return mixed
+		 * @return \yii\web\Response
+		 * return - request on send document
 		 */
-		public function actionDeleteDocument($name,$id)
+		public function actionSetNewPathDocument()
 		{
-			$path = Yii::getAlias('@documentflow').'/documents/'.$id.'/'.$name;
-			if(unlink($path)){
-				Yii::$app->session->setFlash('message', 'Документ удален');
+			$modelFlowDoc = new UserDocumentFlow();
+			$modelUpload = new uploadForm();
+			$post = Yii::$app -> request -> post();
+			$docuemntFile = UploadedFile::getInstance($modelFlowDoc, 'path_to_doc');
+			if($modelFlowDoc -> load($post)) {
+				$modelUpload -> document = $docuemntFile;
+				$path = $modelUpload->uploadDocument(
+					$post['UserDocumentLink']['user_id_from']
+				);
+
+				$model = UserDocumentFlow::findOne($post['UserDocumentLink']['id_flow_doc']);
+				$model->scenario = UserDocumentFlow::SCENARIO_SET_PATH_DOC;
+				$model  -> path_to_doc = $path;
+				$model -> save();
+
+				UserDocumentLink::setStatusSendFrom(
+					$post['UserDocumentLink']['id_flow_doc'],
+					$post['UserDocumentLink']['return_status']
+				);
 			}
+
+			return $this -> redirect('/osobistij-kabinet/index');
+		}
+
+		/**
+		 * change status document
+		 */
+		public function actionSetStatusDoc()
+		{
+			$post = Yii::$app -> request -> post();
+			$model = UserDocumentFlow::findOne($post['UserDocumentFlow']['id_flow_doc']);
+			$model->scenario = UserDocumentFlow::SCENARIO_STATUS;
+			$model -> status = $post['UserDocumentFlow']['status'];
+			$model -> save();
+			return $this -> redirect('/osobistij-kabinet/index');
 		}
 	}

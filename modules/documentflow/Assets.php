@@ -15,12 +15,10 @@
 		public $sourcePath = '@documentflow-assets';
 
 		public $js = [
-//			['js/custom.select.js','position' => View::POS_END],
 //			['js/document.js','position' => View::POS_END],
 		];
 
 		public $css = [
-			'css/custom.select.css',
 			'css/document.css',
 		];
 	}

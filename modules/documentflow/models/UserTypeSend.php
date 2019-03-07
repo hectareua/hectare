@@ -9,7 +9,9 @@
 	namespace app\modules\documentflow\models;
 
 	use app\models\User;
+	use app\modules\documentflow\components\damp;
 	use Yii;
+	use yii\helpers\ArrayHelper;
 
 	/**
 	 * Class UserTypeSend
@@ -17,13 +19,18 @@
 	 */
 	class UserTypeSend extends User
 	{
+
+		const USER_TYPE_MANUFACTURERS = 2;
+		const USER_TYPE_PARTNERS = 4;
+		const USER_TYPE_ACCOUNTANTS = 12;
+		const USER_TYPE_LAWYERS = 13;
 		/**
 		 * @return array
 		 * @throws \yii\db\Exception
 		 */
 		public static function getPartners()
 		{
-			return Yii::$app->db->createCommand(self::sqlRequest(4))->queryAll();
+			return self::sortData(Yii::$app->db->createCommand(self::sqlRequest(4))->queryAll());
 		}
 
 		/**
@@ -32,7 +39,7 @@
 		 */
 		public static function getManufacturers()
 		{
-			return Yii::$app->db->createCommand(self::sqlRequest(2))->queryAll();
+			return self::sortData(Yii::$app->db->createCommand(self::sqlRequest(2))->queryAll());
 		}
 
 		/**
@@ -41,7 +48,7 @@
 		 */
 		public static function getAccountants()
 		{
-			return Yii::$app->db->createCommand(self::sqlRequest(0))->queryAll();
+			return self::sortData(Yii::$app->db->createCommand(self::sqlRequest(12))->queryAll());
 		}
 
 		/**
@@ -50,18 +57,35 @@
 		 */
 		public static function getLawyers()
 		{
-			return Yii::$app->db->createCommand(self::sqlRequest(0))->queryAll();
+			return self::sortData(Yii::$app->db->createCommand(self::sqlRequest(13))->queryAll());
 		}
 
+		/**
+		 * @param $data
+		 *
+		 * @return array
+		 */
+		public static function sortData($data)
+		{
+
+			$array_mass = [];
+			foreach( $data as $datum )
+			{
+				if(!empty($datum['billing_first_name']) && !empty($datum['billing_last_name'])) {
+					$array_mass[$datum['user_id']] = $datum['billing_first_name'].' '.$datum['billing_last_name'];
+				}
+			}
+			return $array_mass;
+		}
 		/**
 		 * @param $type
 		 *
 		 * @return string
 		 */
 		protected static function sqlRequest($type) {
-			return 'SELECT client.billing_first_name,client.billing_last_name 
+			return 'SELECT client.user_id,client.billing_first_name,client.billing_last_name,client.delivery_first_name,client.delivery_last_name,client.delivery_middle_name,client.billing_middle_name 
 					FROM user 
 					LEFT JOIN client ON client.user_id = user.id
-					WHERE ctype='.$type;
+					WHERE user.ctype='.$type;
 		}
 	}

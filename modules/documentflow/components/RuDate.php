@@ -28,7 +28,7 @@
 				switch (mb_substr($str,$iter,1)) {
 					case 'д': {
 						if(!is_null($setDate)) {
-							$dayN = date("N",strtotime($setDate));
+							$dayN = date("N",$setDate);
 						} else {
 							$dayN = date("N");
 						}
@@ -48,7 +48,7 @@
 					}
 					case 'м': {
 						if(!is_null($setDate)) {
-							$monthN = date("m",strtotime($setDate));
+							$monthN = date("m",$setDate);
 						} else {
 							$monthN = date("m");
 						}

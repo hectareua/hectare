@@ -1,25 +1,34 @@
 AddCharset UTF-8 .js
 
+Options +FollowSymLinks
 RewriteEngine on
 
-Redirect 301 /novini/61-suchasni-zasobi-zakhistu-roslin https://hectare.com.ua/novini/60-sovremennye-sredstva-zashchity-rastenij
-Redirect 301 /novini/64-gerbicid-evrolajting https://hectare.com.ua/novini/gerbicid-evrolajting
-Redirect 301 /novini/68-raundap-gerbicid https://hectare.com.ua/novini/raundap-gerbicid
-Redirect 301 /novini/72-gerbicid-dlja-sonjashnika https://hectare.com.ua/novini/gerbicid-dlja-sonjashnika
-Redirect 301 /novini/74-gerbicidi-dlja-kukurudzi https://hectare.com.ua/novini/gerbicidi-dlja-kukurudzi
-Redirect 301 /novini/76 https://hectare.com.ua/novini/gerbicidi-sucilnoi-dii
-Redirect 301 /novini/76-gerbicidi-sucilnoi-dii https://hectare.com.ua/novini/gerbicidi-sucilnoi-dii
-Redirect 301 /novini/78-gruntovi-gerbicidi https://hectare.com.ua/novini/gruntovi-gerbicidi
-Redirect 301 /novini/82-protrujniki-nasinnja https://hectare.com.ua/novini/protrujniki-nasinnja
-Redirect 301 /internet-magazin/cure/0 https://hectare.com.ua/internet-magazin/cure
+Redirect 301 /novini/61-suchasni-zasobi-zakhistu-roslin https://hectare.ua/novini/60-sovremennye-sredstva-zashchity-rastenij
+Redirect 301 /novini/64-gerbicid-evrolajting https://hectare.ua/novini/gerbicid-evrolajting
+Redirect 301 /novini/68-raundap-gerbicid https://hectare.ua/novini/raundap-gerbicid
+Redirect 301 /novini/72-gerbicid-dlja-sonjashnika https://hectare.ua/novini/gerbicid-dlja-sonjashnika
+Redirect 301 /novini/74-gerbicidi-dlja-kukurudzi https://hectare.ua/novini/gerbicidi-dlja-kukurudzi
+Redirect 301 /novini/76 https://hectare.ua/novini/gerbicidi-sucilnoi-dii
+Redirect 301 /novini/76-gerbicidi-sucilnoi-dii https://hectare.ua/novini/gerbicidi-sucilnoi-dii
+Redirect 301 /novini/78-gruntovi-gerbicidi https://hectare.ua/novini/gruntovi-gerbicidi
+Redirect 301 /novini/82-protrujniki-nasinnja https://hectare.ua/novini/protrujniki-nasinnja
+Redirect 301 /internet-magazin/cure/0 https://hectare.ua/internet-magazin/cure
+Redirect 301 /internet-magazin/cure/0 https://hectare.ua/internet-magazin
 
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www\.hectare\.com\.ua [NC]
+RewriteBase /
 RewriteCond %{THE_REQUEST} !/(robots\.txt|sitemap\.xml)\s [NC]
-RewriteRule ^(.*)$ https://hectare.com.ua/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.hectare\.com\.ua$ [NC]
+RewriteRule ^(.*)$ https://hectare.ua/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^hectare\.com\.ua$ [NC]
+RewriteRule ^(.*)$ https://hectare.ua/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.hectare\.ua$ [NC]
+RewriteRule ^(.*)$ https://hectare.ua/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php
 
 <ifModule mod_headers.c>

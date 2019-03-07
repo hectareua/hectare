@@ -1,6 +1,7 @@
 <?php
 
 return [
+	'feedManufacture' => 'web/manufacturer/feed-manufacture',
     '' => 'web/default/index',
     'push' => 'web/default/push',
     'novinis' => 'web/test/index',

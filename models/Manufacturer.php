@@ -15,6 +15,8 @@ use Yii;
  */
 class Manufacturer extends \yii\db\ActiveRecord
 {
+	const STATUS_SET_TO_FEED = 1;
+	const STATUS_UNSET_TO_FEED = 0;
     /**
      * @inheritdoc
      */

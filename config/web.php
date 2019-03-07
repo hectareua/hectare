@@ -40,8 +40,11 @@ $config = [
         ],
     ],
     'components' => [
+		'feedsManufacture' => [
+			'class' => 'app\components\feedManufacture\FeedManufacture',
+		],
         'uploadComponent' => [
-            'class' => 'app\modules\documentflow\components\uploadDocuments\uploadWidgetDocument',
+			'class' => 'app\modules\documentflow\components\uploadDocuments\uploadWidgetDocument',
         ],
         'documentflow' => [
             'class' => 'app\modules\documentflow\components\Document',
