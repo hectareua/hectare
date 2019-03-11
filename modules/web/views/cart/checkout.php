@@ -19,6 +19,9 @@ $this->registerJsFile('@web/js/jquery.maskedinput.min.js', ['depends' => [yii\we
 //$this->registerJsFile('@web/js/bootstrap.min.js', ['depends' => [yii\web\JqueryAsset::className()]]);
 $this->registerCssFile('@web/css/bootstrap.min.css');
 $this->registerCss("
+#myModal{
+    display: none !important;
+}
 a.orderForm-main__submit:hover {
 color:#fff;
 cursor:pointer;
