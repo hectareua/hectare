@@ -511,7 +511,7 @@ $_SESSION['test']='text';
             $city = Yii::$app->request->post('city');
             $deliveryType = Yii::$app->request->post('deliveryType');
 
-            if ($address && $city && $deliveryType){
+            if ($city && $deliveryType){
                 $weight = $this->getOrderWeight();
                 /** @var DeliveryCalculator $deliveryCalculator */
                 $deliveryCalculator = DeliveryFactory::create($deliveryType, $weight);

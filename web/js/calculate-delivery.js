@@ -5,13 +5,19 @@ function clearMessages() {
   });
 }
 
+function showMessage($el, message) {
+  if (!$('#order-delivery_city').val()) {
+    $el.parents('.delivery-radio-container').find('.delivery_type-message').html('<div class="delivery-free"><div class="need_price">' + message + '</div></div>');
+  }
+}
+
 function caclulateDelivery() {
   var $deliveryCity = $('#order-delivery_city'),
     $deliveryAddress = $('#order-delivery_address'),
     url = '/internet-magazin/cart/get-delivery-price',
     $radioOption = $('#order-delivery_type input[type="radio"]:checked');
 
-  if ($deliveryCity.val() && $deliveryAddress.val() && $radioOption.length) {
+  if ($deliveryCity.val() && $radioOption.length) {
     var data = {
       city: $deliveryCity.val(),
       address: $deliveryAddress.val(),
@@ -42,15 +48,12 @@ function caclulateDelivery() {
     });
   } else {
     clearMessages();
+    showMessage($radioOption, 'Укажіть своє місто для доставки');
   }
 }
 
 $(document).ready(function () {
-  $(document).on('focusout', '#order-delivery_city', function (e) {
-    caclulateDelivery();
-  });
-  
-  $(document).on('focusout', '#order-delivery_address', function (e) {
+  $(document).on('focusout', '#order-delivery_city, #order-delivery_address', function (e) {
     caclulateDelivery();
   });
   
