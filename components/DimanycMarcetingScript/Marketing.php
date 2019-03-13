@@ -6,7 +6,7 @@
 	 * Time: 00:13
 	 */
 
-	namespace app\components\feedManufacture;
+	namespace app\components\DimanycMarcetingScript;
 	use app\models\Manufacturer;
 	use app\models\ProductImage;
 	use app\models\Category;
@@ -14,12 +14,6 @@
 
 	class Marketing extends \yii\base\Widget
 	{
-
-		public $type_page = '';
-
-		public $item_id = '';
-
-		public $totalValue = '';
 
 		public function init()
 		{
@@ -29,14 +23,14 @@
 		/**
 		 * @return string
 		 */
-		public function runScript()
+		public function runScript($item_id,$type_page,$totalValue)
 		{
 			return $this -> getView() -> registerJs(
 				'window.dataLayer = window.dataLayer || [];
 					dataLayer.push({
-						ecomm_itemid: "'.$this -> item_id.'",
-						ecomm_pagetype: "'.$this -> type_page.'",
-						ecomm_totalvalue: "'.$this -> totalValue.'"
+						ecomm_itemid: "'.$item_id.'",
+						ecomm_pagetype: "'.$type_page.'",
+						ecomm_totalvalue: "'.$totalValue.'"
 				});
 				'
 			);
