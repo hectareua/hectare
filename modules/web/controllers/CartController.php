@@ -5,6 +5,7 @@ use app\components\delivery\DeliveryCalculator;
 use app\components\delivery\DeliveryFactory;
 use app\models\Product;
 use app\models\Representative;
+use app\models\Stock;
 use Yii;
 use app\models\CartItem;
 use app\models\Order;
@@ -86,9 +87,11 @@ $_SESSION['test']='text';
         foreach ($cart as $cartItem) {
             $bonusUsed += $cartItem->bonusUsed;
             $totalPrice += $cartItem->totalPrice;
-            $tempProduct = Product::findOne($cartItem->product_id);
-            if ($enableInStock && $tempProduct && !$tempProduct->is_in_stock){
-                $enableInStock = false;
+            if ($enableInStock) {
+                $stock = Stock::find()->where(['and', ['product_id' => $cartItem->product_id], ['>', 'main', $cartItem->amount]])->one();
+                if (!$stock) {
+                    $enableInStock = false;
+                }
             }
         }
         $paymentSystems = PaymentSystem::find()->all();
