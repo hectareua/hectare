@@ -129,7 +129,7 @@ if (isset($category->seoKeywords))
                     </div>
                 </div>
                 </li><?php endforeach; ?>
-            
+
         </ul>
 
      <?= LinkPager::widget([
@@ -148,5 +148,15 @@ if (isset($category->seoKeywords))
 
 </div>
 </div>
+
+<script type="text/javascript">
+	window.dataLayer = window.dataLayer || [];
+	dataLayer.push({
+	   ecomm_itemid: "",
+	   ecomm_pagetype: "searchresults",
+	   ecomm_totalvalue: ""
+   });
+</script>
+
 
 

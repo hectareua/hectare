@@ -19,9 +19,6 @@ $this->registerJsFile('@web/js/jquery.maskedinput.min.js', ['depends' => [yii\we
 //$this->registerJsFile('@web/js/bootstrap.min.js', ['depends' => [yii\web\JqueryAsset::className()]]);
 $this->registerCssFile('@web/css/bootstrap.min.css');
 $this->registerCss("
-#myModal{
-    display: none !important;
-}
 a.orderForm-main__submit:hover {
 color:#fff;
 cursor:pointer;
@@ -414,10 +411,10 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
                     </div>
                 <?php endforeach; ?>
             </div>
-            <div class="orderForm-main__totalPrice"><?=Yii::t('web', 'К оплате')?> <span id="total-order-price"><?=number_format($totalPrice, 2)?></span> грн</div>
+            <div class="orderForm-main__totalPrice"><?=Yii::t('web', 'К оплате')?> <span><?=number_format($totalPrice, 2)?></span> грн</div>
             <?php if ($totalPrice > 0): ?>
                 <div class="orderForm-main_delivery">
-                    <p class="header-type_of_delivery">СПОСІБ ДОСТАВКИ</p>
+                    <p>СПОСІБ ДОСТАВКИ</p>
 
                     <?= $form->field($model, 'delivery_type')->radioList(Order::$deliveryTypes, [
                         'item' => function($index, $label, $name, $checked, $value) use ($enableInStock) {
@@ -435,7 +432,7 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
                                 $img = '<img class="img-moment" src="/img/question.png" height="15" width="15" title="Термін доставки: 3 години">';
                             }
                             $return = '<div class="delivery-radio-container"><label>';
-                            $return .= '<input type="radio" name="' . $name . '" value="' . $value . '" ' . ($enable ? '' : 'disabled') . ' class="orderForm-sidebar-radiobuttonList-item__radio">';
+                            $return .= '<input type="radio" name="' . $name . '" value="' . $value . '" ' . ($enable ? '' : 'disabled') . '>';
                             $return .= $label;
                             $return .= $img;
                             $return .= '</label><div class="delivery_type-price ' . $class . '"></div><div class="delivery_type-message"></div></div>';
@@ -443,7 +440,7 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
                             return $return;
                         }
                     ])->label(false) ?>
-                    <?= \yii\helpers\Html::hiddenInput('totalPrice', null, ['id' => 'total-price']) ?>
+
                 </div>
             <?php endif; ?>
             <div class="orderForm-main__title"><?=Yii::t('web', 'Комментарии')?></div>
@@ -646,3 +643,18 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
 //    });
 //");
 //?>
+
+
+<?php
+	$count_id = '';
+	foreach( $cart as $model )
+	{
+		$count_id .= $model -> 	product_id.',';
+	}
+?>
+<?= (new \app\components\DimanycMarcetingScript\Marketing()) -> runScript(
+	$count_id,
+	'conversionintent',
+	(number_format($totalPrice, 2)) ? number_format($totalPrice, 2) : 0 );
+?>
+

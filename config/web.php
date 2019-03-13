@@ -40,11 +40,8 @@ $config = [
         ],
     ],
     'components' => [
-		'feedsManufacture' => [
-			'class' => 'app\components\feedManufacture\FeedManufacture',
-		],
         'uploadComponent' => [
-			'class' => 'app\modules\documentflow\components\uploadDocuments\uploadWidgetDocument',
+            'class' => 'app\modules\documentflow\components\uploadDocuments\uploadWidgetDocument',
         ],
         'documentflow' => [
             'class' => 'app\modules\documentflow\components\Document',
@@ -104,14 +101,10 @@ $config = [
         'pushcomponent' => [
             'class' => 'app\components\Push'
         ],
-		'googleMapComponent' => [
-			'class' => 'app\components\GoogleMapComponent',
-			'key' => 'AIzaSyCPt2jxdUVUrHrdQip_2ldGwQ2MZDHSj1s',
-			'shopCoordinates' => [
-				'lat' => 46.9672784,
-				'long' => 32.0768113
-			]
-		],
+        'googleMapComponent' => [
+            'class' => 'app\components\GoogleMapComponent',
+            'key' => 'AIzaSyCPt2jxdUVUrHrdQip_2ldGwQ2MZDHSj1s',
+        ],
     ],
 
     'on beforeRequest' => function () {

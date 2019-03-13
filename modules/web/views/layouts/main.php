@@ -574,8 +574,8 @@
 							<div><input class="" name="servicetype" type="radio" /><?= Yii::t('web', 'Магазин Гектар') ?></div>
 							<div><input class="" name="servicetype" type="radio" /><?= Yii::t('web', 'Интернет магазин') ?></div>
 							<div><input class="" name="servicetype" type="radio" /><?= Yii::t('web', 'Другое') ?></div>
-							
-							<div class="clr"><?= $form->field($callbackRequest, 'servicetype')->radio(array('label'=>'')) ?> <?= Yii::t('web', 'Магазин Гектар'); ?></div>	
+
+							<div class="clr"><?= $form->field($callbackRequest, 'servicetype')->radio(array('label'=>'')) ?> <?= Yii::t('web', 'Магазин Гектар'); ?></div>
 							<div class="clr"><?= $form->field($callbackRequest, 'servicetype')->radio(array('label'=>'')) ?> <?= Yii::t('web', 'Интернет магазин'); ?></div>
 							<div class="clr"><?= $form->field($callbackRequest, 'servicetype')->radio(array('label'=>'')) ?> <?= Yii::t('web', 'Другое'); ?></div> */ ?>
 					<?= $form->field($callbackRequest, 'servicetype')->radioList(array(Yii::t('web', 'Магазин Гектар')=> Yii::t('web', 'Магазин Гектар'), Yii::t('web', 'Интернет магазин') => Yii::t('web', 'Интернет магазин'), Yii::t('web', 'Другое') => Yii::t('web', 'Другое'))); ?>
@@ -585,7 +585,7 @@
 				<div class="mtop10"><?= Yii::t('web', 'Укажите причину обращения') ?>:</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<?php /* 
+				<?php /*
 						<select class="form-control mtop10" name="question">
 							<option value = "<?= Yii::t('web', 'Вопрос по заказу') ?>"><?= Yii::t('web', 'Вопрос по заказу') ?></option>
 							<option value = "<?= Yii::t('web', 'Вопрос по товару') ?>"><?= Yii::t('web', 'Вопрос по товару') ?></option>
@@ -768,27 +768,27 @@
 	function test() {
 		if ($('#recaptcha1').length) {
 			grecaptcha.render('recaptcha1', {
-				'sitekey': '6LdHFxIUAAAAAEAoR_yde6kZsiT5qt0GINammcGS'
+				'sitekey': '6Ld18pUUAAAAAEi88MqBkdvfw-pUEKrZ6bDvo6xO'
 			});
 		}
 		if ($('#recaptcha2').length) {
 			grecaptcha.render('recaptcha2', {
-				'sitekey': '6LdHFxIUAAAAAEAoR_yde6kZsiT5qt0GINammcGS'
+				'sitekey': '6Leb8pUUAAAAALKUmuPgVBeQlszqJVcWqJ4TSrOn'
 			});
 		}
 		if ($('#recaptcha3').length) {
 			grecaptcha.render('recaptcha3', {
-				'sitekey': '6LdHFxIUAAAAAEAoR_yde6kZsiT5qt0GINammcGS'
+				'sitekey': '6Leb8pUUAAAAALKUmuPgVBeQlszqJVcWqJ4TSrOn'
 			});
 		}
 		if ($('#recaptcha4').length) {
 			grecaptcha.render('recaptcha4', {
-				'sitekey': '6LdHFxIUAAAAAEAoR_yde6kZsiT5qt0GINammcGS'
+				'sitekey': '6Leb8pUUAAAAALKUmuPgVBeQlszqJVcWqJ4TSrOn'
 			});
 		}
 		if ($('#recaptcha5').length) {
 			grecaptcha.render('recaptcha5', {
-				'sitekey': '6LdHFxIUAAAAAEAoR_yde6kZsiT5qt0GINammcGS'
+				'sitekey': '6Leb8pUUAAAAALKUmuPgVBeQlszqJVcWqJ4TSrOn'
 			});
 		}
 	};

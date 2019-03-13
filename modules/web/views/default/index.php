@@ -235,7 +235,7 @@
     function approx() {
         if (jQuery(window).width()<600) {
             jQuery(".header-bottom-menu").css({'top':jQuery("#slider").height()+jQuery(".header-bottom").height(), 'bottom':'inherit'});
-            }   
+            }
     }
     window.onload = function() {
         approx();
@@ -243,3 +243,5 @@
         }
 </script>
 */ ?>
+<?= (new \app\components\DimanycMarcetingScript\Marketing()) -> runScript('','main',''); ?>
+
