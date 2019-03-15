@@ -524,7 +524,7 @@ $_SESSION['test']='text';
                 try {
                     $distance = Yii::$app->googleMapComponent->getDistanceFromShop($city, $address)['distance'];
                 } catch (\Exception $e){
-                    return ['success' => 'false'];
+                    return ['success' => 'false', 'error' => $e->getMessage()];
                 }
 
                 $price = $deliveryCalculator->calculateDeliveryPrice($distance);
