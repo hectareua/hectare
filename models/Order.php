@@ -57,8 +57,8 @@ class Order extends \yii\db\ActiveRecord
     const DELIVERY_TYPE_MOMENT_TO_HOME = 3;
 
     public static $deliveryTypes = [
-        self::DELIVERY_TYPE_TO_HOME => 'Доставка додому:',
-        self::DELIVERY_TYPE_MOMENT_TO_HOME => 'Миттєва доставка додому:',
+        self::DELIVERY_TYPE_TO_HOME => 'Доставка додому',
+        self::DELIVERY_TYPE_MOMENT_TO_HOME => 'Миттєва доставка додому',
         self::DELIVERY_TYPE_BY_USER => 'Самовивіз',
         self::DELIVERY_TYPE_NEW_POST => 'Нова Пошта',
     ];

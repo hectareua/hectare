@@ -19,9 +19,6 @@ $this->registerJsFile('@web/js/jquery.maskedinput.min.js', ['depends' => [yii\we
 //$this->registerJsFile('@web/js/bootstrap.min.js', ['depends' => [yii\web\JqueryAsset::className()]]);
 $this->registerCssFile('@web/css/bootstrap.min.css');
 $this->registerCss("
-#myModal{
-    display: none !important;
-}
 a.orderForm-main__submit:hover {
 color:#fff;
 cursor:pointer;
@@ -654,3 +651,18 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
 //    });
 //");
 //?>
+
+
+<?php
+	$count_id = '';
+	foreach( $cart as $model )
+	{
+		$count_id .= $model -> 	product_id.',';
+	}
+?>
+<?= (new \app\components\DimanycMarcetingScript\Marketing()) -> runScript(
+	$count_id,
+	'conversionintent',
+	(number_format($totalPrice, 2)) ? number_format($totalPrice, 2) : 0 );
+?>
+

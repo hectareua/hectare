@@ -135,7 +135,7 @@ $this->registerJsFile('/web/js/cart.js');
                     <?php endif; ?>
                 <?php endif; ?>
                 <?= Yii::t('web', 'К оплате') ?>
-                <span><?= number_format($totalPrice, 2) ?></span> грн
+                <span id="get_total_price"><?= number_format($totalPrice, 2) ?></span> грн
             </div>
         <?php endif; ?>
         <div class="cart-buttons">
@@ -150,3 +150,17 @@ $this->registerJsFile('/web/js/cart.js');
 </div>
 <div class="space"></div>
 <div class="space"></div>
+
+<?php
+	$count_id = '';
+	foreach( $models as $model )
+	{
+		$count_id .= $model -> 	product_id.',';
+	}
+?>
+<?= (new \app\components\DimanycMarcetingScript\Marketing()) -> runScript(
+		$count_id,
+		'conversionintent',
+		(number_format($totalPrice, 2)) ? number_format($totalPrice, 2) : 0 );
+?>
+

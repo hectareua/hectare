@@ -479,26 +479,6 @@ $_SESSION['test']='text';
     }
 
     /**
-     * This method calculates order weight
-     *
-     * @return float|int
-     */
-    private function getOrderWeight()
-    {
-        $cartItems = $this->_loadCart();
-        $weight = 0;
-        foreach ($cartItems as $cartItem) {
-            foreach ($cartItem->attributeValues as $attributeValue){
-                if ($attributeValue->option->multiplier){
-                    $weight += $attributeValue->option->multiplier / 10000;
-                }
-            }
-        }
-
-        return $weight;
-    }
-
-    /**
      * @return array
      */
     public function actionGetDeliveryPrice()
@@ -513,10 +493,9 @@ $_SESSION['test']='text';
             $city = Yii::$app->request->post('city');
             $deliveryType = Yii::$app->request->post('deliveryType');
 
-            if ($city && $deliveryType){
-                $weight = $this->getOrderWeight();
+            if ($address && $city && $deliveryType){
                 /** @var DeliveryCalculator $deliveryCalculator */
-                $deliveryCalculator = DeliveryFactory::create($deliveryType, $weight);
+                $deliveryCalculator = DeliveryFactory::create($deliveryType);
                 if (!$deliveryType || !$deliveryCalculator){
                     return ['success' => 'false', 'totalPrice' => $totalPrice,];
                 }
