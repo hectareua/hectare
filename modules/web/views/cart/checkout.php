@@ -411,10 +411,10 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
                     </div>
                 <?php endforeach; ?>
             </div>
-            <div class="orderForm-main__totalPrice"><?=Yii::t('web', 'К оплате')?> <span><?=number_format($totalPrice, 2)?></span> грн</div>
+            <div class="orderForm-main__totalPrice"><?=Yii::t('web', 'К оплате')?> <span id="total-order-price"><?=number_format($totalPrice, 2)?></span> грн</div>
             <?php if ($totalPrice > 0): ?>
                 <div class="orderForm-main_delivery">
-                    <p>СПОСІБ ДОСТАВКИ</p>
+                    <p class="header-type_of_delivery">СПОСІБ ДОСТАВКИ</p>
 
                     <?= $form->field($model, 'delivery_type')->radioList(Order::$deliveryTypes, [
                         'item' => function($index, $label, $name, $checked, $value) use ($enableInStock) {
@@ -432,7 +432,7 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
                                 $img = '<img class="img-moment" src="/img/question.png" height="15" width="15" title="Термін доставки: 3 години">';
                             }
                             $return = '<div class="delivery-radio-container"><label>';
-                            $return .= '<input type="radio" name="' . $name . '" value="' . $value . '" ' . ($enable ? '' : 'disabled') . '>';
+                            $return .= '<input type="radio" name="' . $name . '" value="' . $value . '" ' . ($enable ? '' : 'disabled') . ' class="orderForm-sidebar-radiobuttonList-item__radio">';
                             $return .= $label;
                             $return .= $img;
                             $return .= '</label><div class="delivery_type-price ' . $class . '"></div><div class="delivery_type-message"></div></div>';
@@ -440,7 +440,7 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
                             return $return;
                         }
                     ])->label(false) ?>
-
+                    <?= \yii\helpers\Html::hiddenInput('totalPrice', null, ['id' => 'total-price']) ?>
                 </div>
             <?php endif; ?>
             <div class="orderForm-main__title"><?=Yii::t('web', 'Комментарии')?></div>

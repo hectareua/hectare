@@ -122,6 +122,12 @@ $_SESSION['test']='text';
         $representative = Representative::find()->all();
         if ($model->load(Yii::$app->request->post()))
         {
+            $priceWithDelivery = Yii::$app->request->post('totalPrice');
+            if ($priceWithDelivery && $priceWithDelivery > $totalPrice){
+                //add delivery to total price
+                $totalPrice = $priceWithDelivery;
+            }
+
             $paymentSystem = PaymentSystem::find()->where(['id' => $model->payment_system_id])->one();
 
             $done = true;
@@ -480,6 +486,9 @@ $_SESSION['test']='text';
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
+        $orderPrice = $this->getOrderSum();
+        $totalPrice = $orderPrice;
+
         if (Yii::$app->request->isAjax){
             $address = Yii::$app->request->post('address');
             $city = Yii::$app->request->post('city');
@@ -488,8 +497,8 @@ $_SESSION['test']='text';
             if ($address && $city && $deliveryType){
                 /** @var DeliveryCalculator $deliveryCalculator */
                 $deliveryCalculator = DeliveryFactory::create($deliveryType);
-                if (!$deliveryType){
-                    return ['success' => 'false'];
+                if (!$deliveryType || !$deliveryCalculator){
+                    return ['success' => 'false', 'totalPrice' => $totalPrice,];
                 }
                 try {
                     $distance = Yii::$app->googleMapComponent->getDistanceFromShop($city, $address)['distance'];
@@ -497,21 +506,29 @@ $_SESSION['test']='text';
                     return ['success' => 'false', 'error' => $e->getMessage()];
                 }
 
-                $orderPrice = $this->getOrderSum();
                 $price = $deliveryCalculator->calculateDeliveryPrice($distance);
                 $html = $deliveryCalculator->output($distance, $orderPrice);
+                $isFree = $deliveryCalculator->isFree($distance, $orderPrice);
+
+                if (!$isFree){
+                    $totalPrice += $price;
+                }
 
                 return [
                     'success' => 'true',
                     'html' => $html,
                     'price' => $price,
                     'distance' => $distance,
-                    'isFree' => $deliveryCalculator->isFree($distance, $orderPrice),
+                    'isFree' => $isFree,
+                    'totalPrice' => $totalPrice,
                 ];
             }
         }
 
-        return ['success' => 'false'];
+        return [
+            'success' => 'false',
+            'totalPrice' => $totalPrice,
+        ];
     }
 
     private function getPriceForDistance()
