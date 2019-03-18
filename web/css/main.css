@@ -984,12 +984,16 @@ p iframe{width:650.5px;height:360px;margin:20px 10px;}
 .orderForm-main-itemList-header{background:#898989;height:40px;line-height:40px;color:#fff;font-family:"OpenSans-Light", sans-serif;}
 .orderForm-main-itemList-header > *{display:inline-block;text-transform:uppercase;text-align:center;}
 .orderForm-main-itemList-header__photo{width:12%;}
-.orderForm-main-itemList-header__name{width:60%;}
+.orderForm-main-itemList-header__name{width:28%;}
+.orderForm-main-itemList-header__delete{width:8%;}
+.orderForm-main-itemList-header__available{width:20%;}
 .orderForm-main-itemList-header__quantity{width:14%;}
 .orderForm-main-itemList-header__price{width:14%;}
 .orderForm-main-itemList-item{height:100px;border:1px solid #898989;}
+.orderForm-main-itemList-item__delete{width:8%;display: inline-block;height: 30%;background:url("../img/del.png") no-repeat center;vertical-align: middle;cursor:pointer;}
 .orderForm-main-itemList-item__photo{width:12%;padding:5px 10px;background-repeat:no-repeat;background-position:center;-webkit-background-size:contain;position:relative;z-index:-1;display:inline-block;vertical-align:middle;text-align:center;}
-.orderForm-main-itemList-item__name{width:60%;color:#898989;font-family:"OpenSans-Light", sans-serif;line-height:1.5rem;display:inline-block;vertical-align:middle;text-align:center;}
+.orderForm-main-itemList-item__name{width:29%;color:#898989;font-family:"OpenSans-Light", sans-serif;line-height:1.5rem;display:inline-block;vertical-align:middle;text-align:center;}
+.orderForm-main-itemList-item__available{width:20%;color:#898989;font-family:"OpenSans-Light", sans-serif;line-height:1.5rem;display:inline-block;vertical-align:middle;text-align:center;}
 .orderForm-main-itemList-item__quantity{width:14%;display:inline-block;vertical-align:middle;text-align:center;font-family:"OpenSans-Light", sans-serif;color:#898989;}
 .orderForm-main-itemList-item__price{width:14%;display:inline-block;vertical-align:middle;text-align:center;font-family:"OpenSans-Light", sans-serif;color:#898989;}
 .orderForm-main-itemList-item:not(:last-child){border-bottom:none;}
@@ -3192,4 +3196,13 @@ GREEN
 .need_price{
     display: inline;
     color: red;
+}
+
+.not-available{
+    font-family: "OpenSans-Bold", sans-serif;
+}
+
+.available{
+    color: #2dc45b;
+    font-family: "OpenSans-Bold", sans-serif;
 }

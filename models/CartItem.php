@@ -12,6 +12,7 @@ class CartItem extends \yii\base\Model
     public $product_id = null;
     public $amount = null;
     public $bonusUsed = 0;
+    public $isAvailable = true;
 
     public $attrs = [];
 
