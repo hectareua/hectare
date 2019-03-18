@@ -58,3 +58,25 @@ $(document).ready(function () {
     caclulateDelivery();
   });
 });
+
+$('.orderForm-main-itemList-item__delete').click(function(el){
+  el.preventDefault();
+  if(confirm(remove_cart_text)){
+    var th = this;
+    
+    __ajax(remove_cart_link+'?index='+$(th).data('id'),'GET','isajax=1','json', function(responce){ console.log(responce);
+      if(responce.success){
+        location.reload();
+      }
+    });
+    return 0;
+  }
+  return 0;
+});
+
+function __ajax(url,method,data,type,callback){
+  $.ajax({
+    url:url, type:method, data:data, dataType:type, success:function(responce){ callback(responce) }
+  });
+  return false;
+}

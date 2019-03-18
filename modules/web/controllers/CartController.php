@@ -87,11 +87,10 @@ $_SESSION['test']='text';
         foreach ($cart as $cartItem) {
             $bonusUsed += $cartItem->bonusUsed;
             $totalPrice += $cartItem->totalPrice;
-            if ($enableInStock) {
-                $stock = Stock::find()->where(['and', ['product_id' => $cartItem->product_id], ['>', 'main', $cartItem->amount]])->one();
-                if (!$stock) {
-                    $enableInStock = false;
-                }
+            $stock = Stock::find()->where(['and', ['product_id' => $cartItem->product_id], ['>', 'main', $cartItem->amount]])->one();
+            if (!$stock) {
+                $enableInStock = false;
+                $cartItem->isAvailable = false;
             }
         }
         $paymentSystems = PaymentSystem::find()->all();

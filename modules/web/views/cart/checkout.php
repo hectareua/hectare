@@ -313,6 +313,10 @@ event.preventDefault();
 
 ');
 
+$this->registerJs("							"
+    ."remove_cart_text = '".Yii::t('web', 'Действительно удалить?')."';\n"
+    ."remove_cart_link = '".Url::to(['cart/remove'])."';\n");
+
 $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
@@ -391,23 +395,27 @@ $this->registerJsFile('/web/js/calculate-delivery.js', ['depends' => [\yii\web\J
             <div class="orderForm-main__title"><?=Yii::t('web', 'Информация о заказе')?></div>
             <div class="orderForm-main-itemList">
                 <div class="orderForm-main-itemList-header">
-                    <div class="orderForm-main-itemList-header__photo"><?=Yii::t('web', 'фото')?></div><div
-                        class="orderForm-main-itemList-header__name"><?=Yii::t('web', 'наименование')?></div><div
-                        class="orderForm-main-itemList-header__quantity"><?=Yii::t('web', 'количество')?></div><div
-                        class="orderForm-main-itemList-header__price"><?=Yii::t('web', 'сумма')?></div>
+                    <div class="orderForm-main-itemList-header__photo"><?=Yii::t('web', 'фото')?></div>
+                    <div class="orderForm-main-itemList-header__available"></div>
+                    <div class="orderForm-main-itemList-header__name"><?=Yii::t('web', 'наименование')?></div>
+                    <div class="orderForm-main-itemList-header__quantity"><?=Yii::t('web', 'количество')?></div>
+                    <div class="orderForm-main-itemList-header__price"><?=Yii::t('web', 'сумма')?></div>
+                    <div class="orderForm-main-itemList-header__delete"><?=Yii::t('web', 'удалить')?></div>
                 </div>
-                <?php foreach ($cart as $cartItem): ?>
+                <?php foreach ($cart as $key => $cartItem): ?>
                     <div class="orderForm-main-itemList-item">
-                        <div class="orderForm-main-itemList-item__photo" style="background-image: url(<?=$cartItem->product->image->url?>)"></div><div
-                            class="orderForm-main-itemList-item__name">
+                        <div class="orderForm-main-itemList-item__photo" style="background-image: url(<?=$cartItem->product->image->url?>)"></div>
+                        <div class="orderForm-main-itemList-item__available <?= $cartItem->isAvailable ? 'available' : 'not-available' ?>"><?= $cartItem->isAvailable ? Yii::t('web', 'есть в наличии') : Yii::t('web', 'под заказ')?></div>
+                        <div class="orderForm-main-itemList-item__name">
                             <!-- Арт: <?=$cartItem->product_id?> <br> -->
                             <?=$cartItem->product->name?>
                             <?php foreach ($cartItem->attributeValues as $attributeValue): ?>
                                 <br><?=$attributeValue->option->attr->name?>: <?=$attributeValue->option->name?>
                             <?php endforeach; ?>
-                        </div><div
-                            class="orderForm-main-itemList-item__quantity"><?=$cartItem->amount?></div><div
-                            class="orderForm-main-itemList-item__price"><?=number_format($cartItem->totalPrice, 2)?> грн.</div>
+                        </div>
+                        <div class="orderForm-main-itemList-item__quantity"><?=$cartItem->amount?></div>
+                        <div class="orderForm-main-itemList-item__price"><?=number_format($cartItem->totalPrice, 2)?> грн.</div>
+                        <div class="orderForm-main-itemList-item__delete" data-id="<?= $key ?>"></div>
                     </div>
                 <?php endforeach; ?>
             </div>
