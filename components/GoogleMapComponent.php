@@ -25,7 +25,10 @@ class GoogleMapComponent extends Component
     /**
      * @var array
      */
-    public $shopCoordinates;
+    private $voznisenksShopCoordinates = [
+        'lat' => 47.5953712,
+        'long' => 31.3171168
+    ];
 
     public function init()
     {
@@ -33,10 +36,6 @@ class GoogleMapComponent extends Component
 
         if (!$this->key){
             throw new InvalidConfigException('$key param is required.');
-        }
-
-        if (!$this->shopCoordinates){
-            throw new InvalidConfigException('$shopCoordinates param is required.');
         }
     }
 
@@ -85,17 +84,17 @@ class GoogleMapComponent extends Component
      */
     public function getDistanceFromShop($city, $street)
     {
-        $coordinatesDefaultShop = $this->shopCoordinates;
+        $coordinatesVoznesenk = $this->voznisenksShopCoordinates;
         $coordinatesPoint = self::getCoordinates($city, $street);
 
-        if (empty($coordinatesPoint)) {
+        if (!$coordinatesVoznesenk || empty($coordinatesPoint)) {
             throw new \Exception('Bad address.');
         }
 
         $dist = self::getDrivingDistance(
-            $coordinatesDefaultShop['lat'],
+            $coordinatesVoznesenk['lat'],
             $coordinatesPoint['lat'],
-            $coordinatesDefaultShop['long'],
+            $coordinatesVoznesenk['long'],
             $coordinatesPoint['long']
         );
         return $dist;

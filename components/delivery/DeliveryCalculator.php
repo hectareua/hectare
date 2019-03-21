@@ -13,19 +13,11 @@ class DeliveryCalculator
 {
     const PRICE_TO_HOME_PER_KM = 8;
     const PRICE_MOMENT_TO_HOME_PER_KM = 10;
-    const PRICE_MORE_THAT_500_KG = 12;
 
     /**
      * @var float|integer
      */
     protected $priceByKm;
-
-    public function __construct($weight)
-    {
-        if ($weight >= 500){
-            $this->priceByKm = self::PRICE_MORE_THAT_500_KG;
-        }
-    }
 
     /**
      * This method calculates delivery price

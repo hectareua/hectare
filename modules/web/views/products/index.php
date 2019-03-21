@@ -512,7 +512,7 @@ if(count($manufacturer_ids) >= 2 || count($filter_ids) >= 2 || count($manufactur
                             <div class="itemsList-item__status" style="color: black"><?=Yii::t('web', 'Нет в наличии')?></div>
                         <?php endif;?>
 
-                        
+
 
                         <div class="itemsList-desc">
 							<div class="itemsList-item__more itemsList-item-btn text-center"><a href="<?=Url::toProduct($model)?>"><?=Yii::t('web', 'Подробнее о товаре')?></a></div>
@@ -521,7 +521,7 @@ if(count($manufacturer_ids) >= 2 || count($filter_ids) >= 2 || count($manufactur
                             <button class="btn btn-block" disabled><?=Yii::t('web', 'Продажа только в<br>сети магазинов');?></button>
                         <?php else: ?>
 							<div class="itemsList-item__buy itemsList-item-btn text-center" data-attrs=<?=$model->attributeValues[0]->id?> data-id="<?=$model->id?>"><?=Yii::t('web', 'Купить в 1 клик');?></div>
-						<?php endif;?>	
+						<?php endif;?>
                             <div class="item-main-left-table">
                                 <?php foreach ($model->fieldValues as $fieldValue): ?>
                                     <div class="item-main-left-table__option"><?=$fieldValue->option->field->name?></div>
@@ -625,4 +625,6 @@ $(document).on('ready', function() {
 })
 JS;
 $this->registerJs($script);
+?>
+<?= (new \app\components\DimanycMarcetingScript\Marketing()) -> runScript('','catalog','');
 ?>

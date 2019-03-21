@@ -1062,12 +1062,12 @@ $(document).ready(function() {
                 <div class="itemsList-item-sale">
                     <div class="itemsList-item-sale__percent" style="width: 100%; text-align: center;"><span>-<?=(int)$model->discount_one_c?>%</span> <?=Yii::t('web', 'скидка')?></div>
                 </div>
-            <?php endif; ?>	
+            <?php endif; ?>
 			<?php if ($model->manufacturer->discount && $model->discount_one_c == ''): ?>
                 <div class="itemsList-item-sale">
                     <div class="itemsList-item-sale__percent" style="width: 100%; text-align: center;"><span>-<?=(int)$model->manufacturer->discount?>%</span> <?=Yii::t('web', 'скидка')?></div>
                 </div>
-            <?php endif; ?>			
+            <?php endif; ?>
             <?php if(count($model->images)>1):?>
                 <?php for($i=1; $i< count($model->images); $i++):?>
                 <a class="<?php echo $i==1 ? 'btnflip':''?> sert-zoom" data-fancybox="gallery" href="<?=$model->images[$i]->url?>" rel="group">
@@ -1139,7 +1139,7 @@ $(document).ready(function() {
                                     <div class="item-main-left-additional__option"><?=$attributes[$attributeId]->name?></div>
                                     <select class="item-main-left-additional__select product_attribute_select" name="attrs[<?=$attributeId?>]">
                                         <?php foreach ($attributeOptions as $attributeValue): ?>
-                                            <option class="optPriseCurrent" 
+                                            <option class="optPriseCurrent"
                                                 value="<?=$attributeValue->id?>"
                                                 data-price="<?=number_format($attributeValue->currencyPrice,2)?>"
 												data-partner-price="<?=number_format($attributeValue->partnerCurrencyPrice,2)?>"
@@ -1287,7 +1287,7 @@ $(document).ready(function() {
                                 <?=Yii::t('web', 'Цена со скидкой'); ?>
                             </div>
                         <?php endif; ?>
-						
+
                         <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <meta itemprop="priceCurrency" content="UAH" />
                             <div class="item-main-right__price"><span id="priseMode" itemprop="price" class="price_placeholder"><?=number_format($model->currencyPrice, 2, '.', '')?></span>
@@ -1607,7 +1607,7 @@ $(document).ready(function() {
 						<h2>
 							<a href="#" class="tabs-control__item_link"><?=Yii::t('web', 'Описание')?></a>
 							<i class="glyphicon glyphicon-hand-left" style="font-size: 15px;padding-left: 5px;display:none;"></i>
-						</h2> 
+						</h2>
 					</li>
                     <li class="tabs-control__item"><h2><a href="" class="tabs-control__item_link"><?=Yii::t('web', 'Похожие товары')?></h2></a> </li>
                     <li class="tabs-control__item"><h2><a id="review-tab" href="" class="tabs-control__item_link"><?=Yii::t('web', 'Отзывы')?>&nbsp;(<?=count($reviews)?>)</h2></a>
@@ -2799,4 +2799,5 @@ $(document).ready(function () {
 			credit_buy_submit(form);
 
 			return false;
-		}); */
+		}); */?>
+	<?= (new \app\components\DimanycMarcetingScript\Marketing()) -> runScript($model->id,'offerdetail',$model->currencyPrice, '');?>
